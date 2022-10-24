@@ -10,7 +10,7 @@ class News_m extends CI_Model
     public function __construct()
     {
         $this->_client = new Client([
-            'base_uri' => 'http://jtn-api.test/',
+            'base_uri' => 'http://rest.jatimtimes.my.id/',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }
