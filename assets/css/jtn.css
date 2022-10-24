@@ -1,0 +1,104 @@
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  height: 40px;
+  margin: 0px;
+  padding-bottom: 0pc;
+  background-color: #185adb;
+  text-align: center;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.main-page {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  margin: 0px auto;
+}
+
+.bg-times {
+  background-color: #0a1931 !important;
+}
+
+.bg-times-dark {
+  background-color: #6c0000 !important;
+}
+
+.bg-times-gradient {
+  background: #0a1931;
+  background: -moz-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0, #0a1931),
+    color-stop(42%, #0a1931),
+    color-stop(86%, #185adb),
+    color-stop(91%, #f70),
+    color-stop(94%, #e66400),
+    color-stop(100%, #ffc947)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #0a1931 0,
+    #0a1931 42%,
+    #185adb 86%
+  );
+  background: -o-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+  background: -ms-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+  background: linear-gradient(to right, #0a1931 0, #0a1931 42%, #185adb 86%);
+}
+
+.fn60 {
+  font-size: 60%;
+}
+
+.fn65 {
+  font-size: 65% !important;
+}
+.fn80 {
+  font-size: 80% !important;
+}
+.fn95 {
+  font-size: 95% !important;
+}
+.fn100 {
+  font-size: 100% !important;
+}
+.fn250 {
+  font-size: 190% !important;
+}
+.image-listview > li .item .in2 {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.metaListDonation {
+  margin-top: -5px;
+  display: block;
+  font-weight: 600;
+}
+.c_h10 {
+  height: 10px;
+}
+.post-body p {
+  font-size: 16px;
+}
+
+.tulisan {
+  color: #0a1931;
+}
