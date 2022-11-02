@@ -10,6 +10,10 @@ class Fungsi
     function __construct()
     {
         $this->ci = &get_instance();
+        $this->_client = new Client([
+            'base_uri' => 'http://fix-jtnapi.test/',
+            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+        ]);
     }
 
     function imageThumbnail($img, $ukuran)
@@ -46,18 +50,35 @@ class Fungsi
     function getCategoryData($query,$value)
     {
         
-
-        $this->_client = new Client([
-            'base_uri' => 'http://jtn-api.test/',
-            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
-        ]);
-
         $res = $this->_client->request('GET', 'news/optCategoryData/', [
             'query' => [
                 'query' => $query,
                 'value' => $value,
             ]
         ]);
+
+        $response = json_decode($res->getBody()->getContents(), true);
+        return $response;
+    }
+
+    function getProfile($tipe,$id = null)
+    {
+        
+        if ($tipe == "editor") {
+            $res = $this->_client->request('GET', 'profile/editor/', [
+                'query' => [
+                    'tipe' => 'db_editor',
+                    'id' => $id,
+                ]
+            ]);
+        } else {
+            $res = $this->_client->request('GET', 'profile/optCategoryData/', [
+                'query' => [
+                    'tipe' => 'db_editor',
+                    'value' => $id,
+                ]
+            ]);
+        }
 
         $response = json_decode($res->getBody()->getContents(), true);
         return $response;

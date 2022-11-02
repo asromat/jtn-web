@@ -3,7 +3,7 @@
     <!-- Main Navbar -->
     <?php $this->view("element/main-nav-bar") ?>
     <!-- ! Main Navbar -->
-    <div class="main-page mt-2">
+    <div class="main-page">
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
@@ -42,68 +42,27 @@
             <div class="col-12 col-lg-4">
                 <!-- Berita Populer -->
                 <div class="card">
-                    <div class="header-large-title bg-times-gradient">
-                        <h1 class="title">#Berita Populer</h1>
-                        <h4 class="subtitle">Populer dalam Minggu Ini</h4>
+                <div class="header-large-title bg-times-gradient">
+                        <h1 class="title">#Headline Berita</h1>
+                        <h4 class="subtitle">Wajib Kamu Baca</h4>
                     </div>
                     <div class="card-body text-left">
                         <ul class="listview image-listview media">
                             <li>
+                                <?php $no=1; foreach ($headline as $key => $data) {; ?>
+                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
                                 <div class="item">
                                     <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;">1</h1>
+                                        <h1 class="top-text-align" style="font-size: 20px;"><?= $no++?></h1>
                                     </div>
                                     <div class="in">
                                         <div>
-                                            <h3>Waspada, Kota Bandung Berpotensi Hujan Petir dan Angin Kencang Siang
-                                                Hingga Malam </h3>
+                                            <h3><?=$data['news_title']?></h3>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;">2</h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3>Waspada, Kota Bandung Berpotensi Hujan Petir dan Angin Kencang Siang
-                                                Hingga Malam </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;">3</h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3>Waspada, Kota Bandung Berpotensi Hujan Petir dan Angin Kencang Siang
-                                                Hingga Malam </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;">4</h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3>Waspada, Kota Bandung Berpotensi Hujan Petir dan Angin Kencang Siang
-                                                Hingga Malam </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;">5</h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3>Waspada, Kota Bandung Berpotensi Hujan Petir dan Angin Kencang Siang
-                                                Hingga Malam </h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                </a>
+                                <?php } ?>
                             </li>
                         </ul>
                     </div>

@@ -10,7 +10,7 @@ class News_m extends CI_Model
     public function __construct()
     {
         $this->_client = new Client([
-            'base_uri' => 'http://rest.jatimtimes.my.id/v1/',
+            'base_uri' => 'http://fix-jtnapi.test/',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }
@@ -85,6 +85,19 @@ class News_m extends CI_Model
         $res = $this->_client->request('GET', 'news/detail/', [
             'query' => [
                 'id' => $id,
+            ]
+        ]);
+
+        $response = json_decode($res->getBody()->getContents(), true);
+        return $response;
+    }
+
+    public function getSimilar($keyword,$cat_id)
+    {
+        $res = $this->_client->request('GET', 'news/similar/', [
+            'query' => [
+                'keyword' => $keyword,
+                'category' => $cat_id
             ]
         ]);
 

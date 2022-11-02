@@ -28,6 +28,7 @@ class News extends CI_Controller
 	public function kanal()
 	{
 		$data['kanal'] = $this->uri->segment("2");
+		$data['headline'] = $this->news_m->getHeadline();
 		$data['footer_script'] = "footer/search";
 		$this->template->load('template/main', 'tampilan/search', $data);
 	}
@@ -37,11 +38,15 @@ class News extends CI_Controller
 	{
 		//Cek URL Lama atau Terbaru
 		$versionData = $this->fungsi->cekUrl();
+		
 		$data['data'] = $this->news_m->getDetail($versionData['id'])[0];
 		// $data['footer_script'] = "footer/bera	nda";
 		$data['headline'] = $this->news_m->getHeadline();
+		$data['similar'] = $this->news_m->getSimilar("arema",$data['data']['catnews_id']);
+		// test($data['similar']);
 		$data['satukanal'] = $this->news_m->getSameCategory($data['data']['catnews_id']);
 		$data['kategori'] = $this->news_m->getCategoryData("catnews_id",$data['data']['catnews_id'])[0]['catnews_title'];
+		$data['editor'] = $this->fungsi->getProfile("editor",$data['data']['editor_id'])[0]['editor_name'];
 		$this->template->load('template/main', 'tampilan/detail', $data);
 		
 	}

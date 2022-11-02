@@ -14,7 +14,7 @@
                                 <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
-                                    <h1 class="fn250 mb-0"><?= $data['news_title'] ?></h1>
+                                    <h1 class="mb-0" style="font-size: 24px;"><?= $data['news_title'] ?></h1>
                                     <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
                                     <!-- <span class="float-right fn80">
                                     <ion-icon name="eye-outline"></ion-icon></i> 5.70rb

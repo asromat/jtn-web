@@ -4,7 +4,7 @@
     <?php $this->view("element/main-nav-bar") ?>
     <!-- ! Main Navbar -->
     <!-- Content -->
-    <div class="main-page mt-2">
+    <div class="main-page">
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
@@ -13,7 +13,7 @@
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
                         <li class="breadcrumb-item active" aria-current="page">Baca</li>
-                        <li class="breadcrumb-item active" aria-current="page"><?=$data['news_title']?></li>
+                        <li class="breadcrumb-item active" aria-current="page"><?=$kategori?></li>
                     </ol>
                 </nav>
             </div>
@@ -32,19 +32,25 @@
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>
-                <div class="card mt-2 p-3">
+                <div class="blog-post mt-1 p-3" style="width: 100%;">
+                    <div class="post-body">
                     <?= $data['news_content'] ?>
+                        <h3>Topik</h3>
+                    </div>
                     <hr>
-                    <h3>Topik</h3>
                     <p>
                         <span class="badge badge-primary">Tag 1</span> <span class="badge badge-primary">Tag
                             2</span> <span class="badge badge-primary">Tag 3</span>
                     </p>
-                    <p style="font-size: 16px;">
-                        Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com. Mari
-                        bergabung di Grup Telegram , caranya klik link Telegram JatimTIMES, kemudian join. Anda
-                        harus install aplikasi Telegram terlebih dulu di ponsel.
-                    </p>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">
+                        </div>
+                        <div class="col-10">
+                            <h3>JOIN JATIM TIMES NETWORK</h3>
+                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com. Mari bergabung di Grup Telegram , caranya klik link Telegram JatimTIMES, kemudian join. Anda harus install aplikasi Telegram terlebih dulu di ponsel.
+                        </div>
+                    </div>
                     <hr>
                     <div class="row">
                         <div class="col-6">
@@ -53,64 +59,42 @@
                         </div>
                         <div class="col-6 float-right">
                             <h3>Editor</h3>
-                            <h4><?= $data['editor_id'] ?></h4>
+                            <h4><?= $editor ?></h4>
                         </div>
                     </div>
                 </div>
                 <!-- Berita Terkait -->
-                <!-- <div class="row mt-2 mb-3">
+                <?php if(!isset($similar['status'])) { ?>
+                <div class="row mt-2 mb-3">
                     <div class="col-12">
                         <div class="header-large-title mt-5 bg-times-gradient">
                             <h1 class="title">#Berita Terkait</h1>
                         </div>
                         <div class="carousel carousel-multiple owl-carousel owl-theme">
+                            <?php foreach ($similar as $key => $data) {; ?>
                             <div class="item">
                                 <div class="card position-relative p-1">
-                                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/12/Rakor-penanganan-dampak-korban-Kanjururuhan.Foto-Riski-WijayaMalangTIMESjatimtimes-P.jpeg879995d0e9c43736.th.jpg" class="card-img-top" alt="Satu Lagi Korban Tragedi Kanjuruhan Meninggal Dunia">
+                                <img src="<?= $data['news_image_new'] ?>" class="rounded-top img-fluid" alt="Aktivis JCW Apresiasi Keberhasilan KPK RI OTT Hakim Agung" style="width: 100%;">
                                     <div class="card-body p-1">
-                                        <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span>
-                                        <p>Indahnya Panorama Batu Patapaan, Wisata Alam yang Cocok untuk
-                                            Climbing dan Fotografi</p>
-                                        <span class="float-left fn80">Selasa, 11 Oktober 2022</span>
+                                        <p><?= $data['news_title'] ?></p>
+                                        <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
                                     </div>
-                                    <a href="#" class="stretched-link"></a>
+                                    <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="card position-relative p-1">
-                                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/12/Rakor-penanganan-dampak-korban-Kanjururuhan.Foto-Riski-WijayaMalangTIMESjatimtimes-P.jpeg879995d0e9c43736.th.jpg" class="card-img-top" alt="Satu Lagi Korban Tragedi Kanjuruhan Meninggal Dunia">
-                                    <div class="card-body p-1">
-                                        <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span>
-                                        <p><strong>Indahnya Panorama Batu Patapaan, Wisata Alam yang Cocok untuk
-                                                Climbing dan Fotografi</strong></p>
-                                        <span class="float-left fn80">Selasa, 11 Oktober 2022</span>
-                                    </div>
-                                    <a href="#" class="stretched-link"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card position-relative p-1">
-                                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/12/Rakor-penanganan-dampak-korban-Kanjururuhan.Foto-Riski-WijayaMalangTIMESjatimtimes-P.jpeg879995d0e9c43736.th.jpg" class="card-img-top" alt="Satu Lagi Korban Tragedi Kanjuruhan Meninggal Dunia">
-                                    <div class="card-body p-1">
-                                        <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span>
-                                        <p><strong>Indahnya Panorama Batu Patapaan, Wisata Alam yang Cocok untuk
-                                                Climbing dan Fotografi</strong></p>
-                                        <span class="float-left fn80">Selasa, 11 Oktober 2022</span>
-                                    </div>
-                                    <a href="#" class="stretched-link"></a>
-                                </div>
-                            </div>
-
+                            <?php } ?>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <?php } ?>
                 <!-- * Berita Terkait -->
             </div>
             <div class="col-12 col-lg-4">
                 <?php if (!isset($satukanal['status'])) { ?>                
                 <!-- Satu Kanal -->
                 <div class="header-large-title bg-times-gradient">
-                    <h1 class="title">#Dari kanal yang sama</h1>
+                    <h1 class="title">#<?=$kategori?></h1>
+                    <h4 class="subtitle">Artikel bulan ini dari kanal <?= $kategori ?></h4>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
