@@ -9,8 +9,14 @@ class News_m extends CI_Model
 
     public function __construct()
     {
+        // Environment
+        // $this->_client = new Client([
+        //     'base_uri' => 'http://fix-jtnapi.test/',
+        //     'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+        // ]);
+        // Real
         $this->_client = new Client([
-            'base_uri' => 'http://fix-jtnapi.test/',
+            'base_uri' => 'https://rest.jatimtimes.my.id/v1/',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }
