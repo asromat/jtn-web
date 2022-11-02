@@ -9,6 +9,7 @@ class Fungsi
 
     function __construct()
     {
+        $this->ci = &get_instance();
         // Environment
         // $this->_client = new Client([
         //     'base_uri' => 'http://fix-jtnapi.test/',
