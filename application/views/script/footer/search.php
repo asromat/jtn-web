@@ -1,5 +1,5 @@
 <!-- Infinity Load -->
-<script>
+<!-- <script>
     $(document).ready(function() {
 
         var limit = 7;
@@ -57,10 +57,10 @@
         });
 
     });
-</script>
+</script> -->
 <!-- ! Infinity Load -->
 <!-- On Button Loadmore -->
-<!-- <script>
+<script>
     $(document).ready(function() {
 
         var limit = 7;
@@ -119,5 +119,5 @@
         });
 
     });
-</script> -->
+</script>
 <!-- ! On Button Loadmore -->

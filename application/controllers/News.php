@@ -14,6 +14,7 @@ class News extends CI_Controller
 	// Beranda
 	public function index()
 	{
+		
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['hukum'] = $this->news_m->getCategory("hukum dan kriminalitas");
 		$data['pendidikan'] = $this->news_m->getCategory("pendidikan");

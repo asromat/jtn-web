@@ -17,7 +17,7 @@ class Fungsi
         // ]);
         // Real
         $this->_client = new Client([
-            'base_uri' => 'https://rest.jatimtimes.my.id/v1/',
+            'base_uri' => 'https://api.jtnweb.my.id',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }

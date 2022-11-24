@@ -145,7 +145,7 @@
                     </div>
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="<?= base_url("page/redaksi")?>" class="item">
+                            <a href="<?=base_url()?>redaksi" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -153,7 +153,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= base_url("page/kontak")?>" class="item">
+                            <a href="<?=base_url()?>kontak" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -161,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= base_url("page/pedoman")?>" class="item">
+                            <a href="<?=base_url()?>pedoman" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -255,16 +255,13 @@
                     <div class="col-lg-8 col-12">
                         <ul class="list-inline text-uppercase" style="font-size: 12px;">
                             <li class="list-inline-item">
-                                <a href="#" class="text-light" title="Tentang Kami">Tentang Kami</a>
+                                <a href="<?=base_url()?>/redaksi" class="text-light" title="Tentang Kami">Tentang Kami</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="text-light" title="Redaksi">Redaksi</a>
+                                <a href="<?=base_url()?>/redaksi" class="text-light" title="Redaksi">Redaksi</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="text-light" title="Jurnalisme Positif">Jurnalisme Positif</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-light" title="Info Iklan">Info Iklan</a>
+                                <a href="<?=base_url()?>/info-iklan" class="text-light" title="Info Iklan">Info Iklan</a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#" class="text-light" title="Kebijakan Data Pribadi">Kebijakan Data Pribadi</a>

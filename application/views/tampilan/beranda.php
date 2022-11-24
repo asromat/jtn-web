@@ -78,9 +78,11 @@
                 </div>
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
-                <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/02/dprd-kab-malang.psd1a0416a9d7b679b3.md.png" alt="image">
+                <?php if ($_SERVER["HTTP_HOST"] == "batu.jatimtimes.com") { ?>
+                <div class="adbox adbox-fixed mt-4">
+                    <img class="d-block w-100" src="https://risetcdn.jatimtimes.com/images/2022/11/16/cukaibatu_1.psd-20b15a85ebf6f2079.png">
                 </div>
+                <?php } ?>
                 <div class="adbox adbox-responsive mt-4">
                     <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
                 </div>
