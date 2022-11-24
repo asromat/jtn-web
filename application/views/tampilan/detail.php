@@ -9,7 +9,7 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">
+                        <li class="breadcrumb-item"><a href="<?=base_url()?>">
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
                         <li class="breadcrumb-item active" aria-current="page">Baca</li>
@@ -21,10 +21,15 @@
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="p-2 bg-white rounded shadow-sm">
-                    <a href="#"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1"><?= $kategori ?></span></a>
+                    <a href="<?= base_url()?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1"><?= $kategori ?></span></a>
                     <!-- <a href="#" class="d-block text-primary fn-poppins font-italic mt-1">OTT KPK di MA</a> -->
                     <h1><?= $data['news_title'] ?></h1>
-                    <div><small class="text-muted"><?= $this->fungsi->timeToStr("d-m-Y",$data['news_datepub']) ?></small></div>
+                    <div>
+                        <p font-size="15px">
+                            <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor?>
+                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i",$data['news_datepub']) ?></small>
+                        </p>
+                    </div>
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%;">
@@ -32,7 +37,7 @@
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>
-                <div class="blog-post mt-1 p-3" style="width: 100%;">
+                <div class="blog-post mt-1" style="width: 100%;">
                     <div class="post-body">
                     <?= $data['news_content'] ?>
                         <h3>Topik</h3>
@@ -63,9 +68,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iklan Bawah Berita -->
+                <div class="adbox adbox-responsive mt-4">
+                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
+                </div>
+                <!-- ! Iklan Bawah Berita -->
                 <!-- Berita Terkait -->
                 <?php if(!isset($similar['status'])) { ?>
-                <div class="row mt-2 mb-3">
+                <!-- <div class="row mt-2 mb-3">
                     <div class="col-12">
                         <div class="header-large-title mt-5 bg-times-gradient">
                             <h1 class="title">#Berita Terkait</h1>
@@ -85,7 +95,7 @@
                             <?php } ?>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <?php } ?>
                 <!-- * Berita Terkait -->
             </div>

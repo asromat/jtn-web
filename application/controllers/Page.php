@@ -20,10 +20,14 @@ class Page extends CI_Controller {
 			$halaman = "redaksi";
 		} elseif ($page == "info-iklan"){
 			$halaman = "info-iklan";
-		} elseif ($page == "info-iklan"){
+		} elseif ($page == "kontak"){
 			$halaman = "info-iklan";
-		} elseif ($page == "info-iklan"){
-			$halaman = "info-iklan";
+		} elseif ($page == "disclaimer"){
+			$halaman = "disclaimer";
+		} elseif ($page == "pedoman"){
+			$halaman = "pedoman-media-siber";
+		} elseif ($page == "privacy"){
+			$halaman = "privacy";
 		} else {
 			redirect();
 		}

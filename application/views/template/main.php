@@ -14,9 +14,120 @@
     <link rel="icon" type="image/png" href="<?= base_url() ?>/assets/img/favicon.png" sizes="32x32" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>/assets/img/icon/192x192.png" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/jtn.css" />
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css" />
     <link rel="manifest" href="__manifest.json" />
+    <!-- Custom CSS -->
+    <style>
+        div.scrollmenu {
+            overflow: auto;
+            white-space: nowrap;
+            height: 40px;
+            margin: 0px;
+            padding-bottom: 0pc;
+            background-color: #185adb;
+            text-align: center;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+        .main-page {
+            position: relative;
+            max-width: 1200px;
+            width: 100%;
+            min-height: calc(100vh - 60px);
+            margin: 0px auto;
+        }
+
+        .bg-times {
+            background-color: #0a1931 !important;
+        }
+
+        .bg-times-dark {
+            background-color: #6c0000 !important;
+        }
+
+        .bg-times-gradient {
+            background: #0a1931;
+            background: -moz-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+            background: -webkit-gradient(left top,
+                    right top,
+                    color-stop(0, #0a1931),
+                    color-stop(42%, #0a1931),
+                    color-stop(86%, #185adb),
+                    color-stop(91%, #f70),
+                    color-stop(94%, #e66400),
+                    color-stop(100%, #ffc947));
+            background: -webkit-linear-gradient(left,
+                    #0a1931 0,
+                    #0a1931 42%,
+                    #185adb 86%);
+            background: -o-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+            background: -ms-linear-gradient(left, #0a1931 0, #0a1931 42%, #185adb 86%);
+            background: linear-gradient(to right, #0a1931 0, #0a1931 42%, #185adb 86%);
+        }
+
+        .fn60 {
+            font-size: 60%;
+        }
+
+        .fn65 {
+            font-size: 65% !important;
+        }
+
+        .fn80 {
+            font-size: 80% !important;
+        }
+
+        .fn95 {
+            font-size: 95% !important;
+        }
+
+        .fn100 {
+            font-size: 100% !important;
+        }
+
+        .fn250 {
+            font-size: 190% !important;
+        }
+
+        .image-listview>li .item .in2 {
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .metaListDonation {
+            margin-top: -5px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .c_h10 {
+            height: 10px;
+        }
+
+        .post-body p {
+            font-size: 16px;
+        }
+
+        .tulisan {
+            color: #0a1931;
+        }
+    </style>
+    <!-- ! Custom CSS -->
 </head>
 
 <body>
@@ -37,6 +148,7 @@
             <a href="<?= base_url() ?>"><img src="https://cdnstatic.jatimtimes.com/logo/new/jatim.png" alt="Jatim Times Network Logo" class="image" height="50px" /></a>
         </div>
         <div class="right">
+            <font size="1" class="float-right"><?=date("d/m/Y")?></font>
             <a href="javascript:;" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
@@ -87,7 +199,7 @@
                     <!-- * profile box -->
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -96,11 +208,11 @@
                         </li>
                     </ul>
                     <div class="listview-title mt-2 mb-1">
-                        <span>Kanal</span>
+                        <span>Kanal Populer</span>
                     </div>
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>/kanal/hukum dan kriminalitas" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -108,7 +220,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>/kanal/pemerintahan" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -116,7 +228,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>/kanal/pendidikan" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -124,7 +236,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>/kanal/gaya hidup" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -132,7 +244,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" class="item">
+                            <a href="<?=base_url()?>/kanal/kuliner" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -141,11 +253,11 @@
                         </li>
                     </ul>
                     <div class="listview-title mt-2 mb-1">
-                        <span>Kanal Pilihan</span>
+                        <span>Halaman Penting</span>
                     </div>
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="<?=base_url()?>redaksi" class="item">
+                            <a href="<?= base_url() ?>redaksi" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -153,7 +265,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?=base_url()?>kontak" class="item">
+                            <a href="<?= base_url() ?>kontak" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -161,7 +273,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?=base_url()?>pedoman" class="item">
+                            <a href="<?= base_url() ?>pedoman" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -169,7 +281,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= base_url("page/disclaimer")?>" class="item">
+                            <a href="<?= base_url("disclaimer") ?>" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
@@ -189,16 +301,16 @@
                 <br>
                 <!-- sidebar buttons -->
                 <div class="sidebar-buttons">
-                    <a href="javascript:;" class="button">
+                    <a href="#" class="button">
                         <ion-icon name="logo-facebook" style="color: #0165e1"></ion-icon>
                     </a>
-                    <a href="javascript:;" class="button">
+                    <a href="#" class="button">
                         <ion-icon name="logo-youtube" style="color: #ff0000"></ion-icon>
                     </a>
-                    <a href="javascript:;" class="button">
+                    <a href="https://instagram.com/jatimtimescom" class="button">
                         <ion-icon name="logo-instagram" style="color: #ff0073"></ion-icon>
                     </a>
-                    <a href="javascript:;" class="button">
+                    <a href="#" class="button">
                         <ion-icon name="logo-tiktok" style="color: #000040"></ion-icon>
                     </a>
                 </div>
@@ -225,7 +337,7 @@
                         <h4 class="mt-0" style="color: #ffffff;">Follow Jatim Times Network</h4>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="#" comet="_blank" class="text-light">
+                                <a href="https://instagram.com/jatimtimescom" comet="_blank" class="text-light">
                                     <ion-icon name="logo-instagram"></ion-icon> @jatimtimescom
                                 </a>
                             </li>
@@ -255,13 +367,13 @@
                     <div class="col-lg-8 col-12">
                         <ul class="list-inline text-uppercase" style="font-size: 12px;">
                             <li class="list-inline-item">
-                                <a href="<?=base_url()?>/redaksi" class="text-light" title="Tentang Kami">Tentang Kami</a>
+                                <a href="<?= base_url() ?>/redaksi" class="text-light" title="Tentang Kami">Tentang Kami</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="<?=base_url()?>/redaksi" class="text-light" title="Redaksi">Redaksi</a>
+                                <a href="<?= base_url() ?>/redaksi" class="text-light" title="Redaksi">Redaksi</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="<?=base_url()?>/info-iklan" class="text-light" title="Info Iklan">Info Iklan</a>
+                                <a href="<?= base_url() ?>/info-iklan" class="text-light" title="Info Iklan">Info Iklan</a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#" class="text-light" title="Kebijakan Data Pribadi">Kebijakan Data Pribadi</a>
@@ -284,6 +396,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-2">
+                    <img src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" width="100px" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
                     <p class="text-muted">&copy; 2016 - 2022 <a href="https://www.jatimtimes.com/" alt="Jatim Times Network">Jatim Times Network</a>.
                         <br>
                         <span class="font-weight-light">Load time: <strong>{elapsed_time}</strong> detik. Diakses melalui

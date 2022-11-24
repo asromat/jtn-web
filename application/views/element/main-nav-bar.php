@@ -10,7 +10,7 @@
     <!-- <a href="<?=base_url("kanal/infograsi")?>">Inforgrafis MalangTIMES</a> -->
     <a href="<?=base_url("kanal/kesehatan")?>">Kesehatan</a>
     <a href="<?=base_url("kanal/kuliner")?>">Kuliner</a>
-    <a href="<?=base_url("kanal/liputan khusus")?>">Lapsus</a>
+    <!-- <a href="<?=base_url("kanal/liputan khusus")?>">Lapsus</a> -->
     <a href="<?=base_url("kanal/olahraga")?>">Olahraga</a>
     <a href="<?=base_url("kanal/opini")?>">Opini</a>
     <a href="<?=base_url("kanal/otomotif")?>">Otomotif</a>
