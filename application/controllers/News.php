@@ -9,12 +9,13 @@ class News extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("news_m");
+		$this->data['daerah'] = $this->settings->dataDaerah($_SERVER['HTTP_HOST'])[0];
 	}
 
 	// Beranda
 	public function index()
 	{
-		
+		$data['daerah'] = $this->data['daerah'];
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['hukum'] = $this->news_m->getCategory("hukum dan kriminalitas");
 		$data['pendidikan'] = $this->news_m->getCategory("pendidikan");
@@ -56,7 +57,39 @@ class News extends CI_Controller
 	public function loadMore()
 	{
 		$output = '';
-		$data = $this->news_m->getAll($this->input->post("limit"),$this->input->post("start"));
+		$data = $this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start"));
+		if ($data > 0) {
+			foreach ($data as $key => $row) {
+				$output .= '
+				<a href="'.base_url().'baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
+				<div class="item">
+					<div class="imageWrapper">
+						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
+					</div>
+					<div class="in">
+						<div>
+							<header class="text-primary fn80 text-uppercase font-weight-bold">
+							</header>
+							<h3>'.$row['news_title'].'</h3>
+							<div class="text-muted d-block fn60">
+								<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				</a>
+                ';
+			}
+		}
+		echo $output;
+	}
+
+	// Load More Beranda
+	public function loadMoreDaerah()
+	{
+		$output = '';
+		$data = $this->news_m->getDaerah($this->settings->dataDaerah($_SERVER['HTTP_HOST'])[0]['kode'],$this->input->post("limit"),$this->input->post("start"));
 		if ($data > 0) {
 			foreach ($data as $key => $row) {
 				$output .= '

@@ -21,10 +21,25 @@ class News_m extends CI_Model
         ]);
     }
     
-    public function getAll($limit = null,$start = null)
+    public function getAll($location= null,$limit = null,$start = null)
     {
-        $res = $this->_client->request('GET', 'news/all', [
+        $res = $this->_client->request('GET', 'news/location', [
             'query' => [
+                'location' => $location,
+                'start' => $start,
+                'limit' => $limit,
+            ]
+        ]);
+
+        $response = json_decode($res->getBody()->getContents(), true);
+        return $response;
+    }
+
+    public function getDaerah($location = null, $limit = null,$start = null)
+    {
+        $res = $this->_client->request('GET', 'news/location', [
+            'query' => [
+                'location' => $location,
                 'start' => $start,
                 'limit' => $limit,
             ]
