@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-10">
                             <h3>JOIN JATIM TIMES NETWORK</h3>
-                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com. Mari bergabung di Grup Telegram , caranya klik link Telegram JatimTIMES, kemudian join. Anda harus install aplikasi Telegram terlebih dulu di ponsel.
+                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com. Mari bergabung di Grup Telegram , caranya klik link Telegram JatimTIMES, kemudian join. Anda harus install aplikasi Telegram terlebih dulu di ponsel anda.
                         </div>
                     </div>
                     <hr>
