@@ -68,7 +68,7 @@ class News extends CI_Controller
 		if ($data > 0) {
 			foreach ($data as $key => $row) {
 				$output .= '
-				<a href="'.base_url().'baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
+				<a href="https://'.$_SERVER['HTTP_HOST'].'/baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
 				<div class="item">
 					<div class="imageWrapper">
 						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
