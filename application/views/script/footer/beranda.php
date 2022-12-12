@@ -18,7 +18,7 @@
 
         function load_data(limit, start) {
             $.ajax({
-                url: "<?=base_url();?>/news/loadMore",
+                url: "https://<?=$_SERVER['HTTP_HOST'];?>/news/loadMore",
                 method: "POST",
                 data: {
                     limit: limit,
