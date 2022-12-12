@@ -16,6 +16,9 @@ class News extends CI_Controller
 	public function index()
 	{
 		$data['daerah'] = $this->data['daerah'];
+
+		test($this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start")));
+		
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['hukum'] = $this->news_m->getCategory("hukum dan kriminalitas");
 		$data['pendidikan'] = $this->news_m->getCategory("pendidikan");
@@ -29,6 +32,8 @@ class News extends CI_Controller
 	// Untuk Search tag, kanal, dan fokus nantinya
 	public function kanal()
 	{
+		$data['daerah'] = $this->data['daerah'];
+
 		$data['kanal'] = $this->uri->segment("2");
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['footer_script'] = "footer/search";
@@ -39,7 +44,7 @@ class News extends CI_Controller
 	public function detail()
 	{
 		$data['daerah'] = $this->data['daerah'];
-		
+
 		//Cek URL Lama atau Terbaru
 		$versionData = $this->fungsi->cekUrl();
 		
