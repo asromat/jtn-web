@@ -33,7 +33,7 @@
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%;">
-                        <img src="<?= $data['news_image_new'] ?>" class="rounded-top img-fluid" alt="Aktivis JCW Apresiasi Keberhasilan KPK RI OTT Hakim Agung" style="width: 100%;">
+                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: 100%;">
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>

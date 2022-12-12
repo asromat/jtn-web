@@ -24,7 +24,7 @@ class Fungsi
 
     function imageThumbnail($img, $ukuran)
     {
-        $query = str_replace(['.md', '.th', '.jpg', '.png'], ['', '', '.' . $ukuran . '.jpg', '.' . $ukuran . '.png'], $img);
+        $query = str_replace(['https://','.md', '.th', '.jpg', '.png'], ['https://i1.wp.com/','', '', '.' . $ukuran . '.jpg?quality=50', '.' . $ukuran . '.png?quality=50'], $img);
         return $query;
     }
     
