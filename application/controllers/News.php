@@ -17,8 +17,8 @@ class News extends CI_Controller
 	{
 		$data['daerah'] = $this->data['daerah'];
 
-		test($this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start")));
-		
+		// test($this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start")));
+
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['hukum'] = $this->news_m->getCategory("hukum dan kriminalitas");
 		$data['pendidikan'] = $this->news_m->getCategory("pendidikan");
