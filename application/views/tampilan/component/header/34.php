@@ -1,4 +1,4 @@
-n<meta property="fb:app_id" content="621270734944156" />
+<meta property="fb:app_id" content="621270734944156" />
 <meta property="fb:admins" content="114477503528250" />
 <meta property="og:locale" content="id_ID" />
 <meta property="og:type" content="article" />
