@@ -6,6 +6,10 @@
 
     <link rel="icon" type="image/png" href="<?= base_url() ?>/assets/img/favicon.png" sizes="32x32" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>/assets/img/icon/192x192.png" />
+    <!-- Share -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css">
+    <!-- !Share -->
     <!-- Main CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css" />
     <link rel="manifest" href="__manifest.json" />
@@ -401,6 +405,10 @@
     </footer>
 
     <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Share -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.js"></script>
+    <!-- !Share -->
     <!-- Jquery -->
     <script src="<?= base_url() ?>/assets/js/lib/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap-->

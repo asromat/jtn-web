@@ -12,7 +12,7 @@
                         <li class="breadcrumb-item"><a href="<?=base_url()?>">
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Baca</li>
+                            <li class="breadcrumb-item active" aria-current="page">Baca</li>
                         <li class="breadcrumb-item active" aria-current="page"><?=$kategori?></li>
                     </ol>
                 </nav>
@@ -29,7 +29,8 @@
                             <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor?>
                             <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i",$data['news_datepub']) ?></small>
                         </p>
-                    </div>
+                    </div>                    
+                    <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%;">

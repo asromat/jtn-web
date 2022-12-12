@@ -33,7 +33,7 @@ class News extends CI_Controller
 	public function kanal()
 	{
 		$data['daerah'] = $this->data['daerah'];
-
+		
 		$data['kanal'] = $this->uri->segment("2");
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['footer_script'] = "footer/search";
@@ -44,7 +44,7 @@ class News extends CI_Controller
 	public function detail()
 	{
 		$data['daerah'] = $this->data['daerah'];
-
+		
 		//Cek URL Lama atau Terbaru
 		$versionData = $this->fungsi->cekUrl();
 		
@@ -111,7 +111,7 @@ class News extends CI_Controller
 							</header>
 							<h3>'.$row['news_title'].'</h3>
 							<div class="text-muted d-block fn60">
-								<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
+							<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
 							</div>
 
 						</div>

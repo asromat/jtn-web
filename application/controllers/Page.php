@@ -6,6 +6,7 @@ class Page extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
+		$this->data['daerah'] = $this->settings->dataDaerah($_SERVER['HTTP_HOST'])[0];
 	}
 
 	public function index()
@@ -15,6 +16,8 @@ class Page extends CI_Controller {
 
 	public function static()
 	{		
+		$data['daerah'] = $this->data['daerah'];
+		
 		$page = $this->uri->segment("1");
 		if ($page == "redaksi"){
 			$halaman = "redaksi";
