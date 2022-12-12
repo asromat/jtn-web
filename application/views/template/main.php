@@ -138,7 +138,7 @@
             </a>
         </div>
         <div class="pageTitle">
-            <a href="<?= base_url() ?>"><img src="https://cdnstatic.jatimtimes.com/logo/new/jatim.png" alt="Jatim Times Network Logo" class="image" height="50px" /></a>
+            <a href="<?= base_url() ?>"><img src="<?= $daerah['logo']?>" alt="Jatim Times Network Logo" class="image" height="50px" /></a>
         </div>
         <div class="right">
             <font size="1" class="float-right"><?=date("d/m/Y")?></font>
