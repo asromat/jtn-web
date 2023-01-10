@@ -1,4 +1,34 @@
 <!-- App Capsule -->
+
+<script>  
+      document.addEventListener("DOMContentLoaded", function() {  
+        let lazyloadImages = document.querySelectorAll("img.lazy-load");  
+        let lazyloadThrottleTimeout;  
+        function lazyload() {  
+          if(lazyloadThrottleTimeout) {  
+            clearTimeout(lazyloadThrottleTimeout);  
+          }  
+          lazyloadThrottleTimeout = setTimeout(function() {  
+            let scrollTop = window.pageYOffset;  
+            lazyloadImages.forEach(function(img) {  
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {  
+                imgimg.src = img.dataset.src;  
+                img.classList.remove('lazy');  
+              }  
+            });  
+            if(lazyloadImages.length == 0) {  
+              document.removeEventListener("scroll", lazyload);  
+              window.removeEventListener("resize", lazyload);  
+              window.removeEventListener("orientationChange", lazyload);  
+            }  
+          }, 20);  
+        }  
+        document.addEventListener("scroll", lazyload);  
+        window.addEventListener("resize", lazyload);  
+        window.addEventListener("orientationChange", lazyload);  
+      });  
+    </script> 
+    
 <div id="appCapsule">
     <?php $this->view("element/main-nav-bar") ?>
     <!-- Section 1 -->
@@ -11,7 +41,7 @@
                     <?php foreach ($headline as $key => $data) {; ?>
                         <div class="item">
                             <div class="card position-relative p-1">
-                                <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
+                                <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid lazy-load" alt="$data['news_title']" style="max-height: 1200px; width:100%">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
                                     <h1 class="mb-0" style="font-size: 24px;"><?= $data['news_title'] ?></h1>
@@ -116,7 +146,7 @@
                                 <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
                                 <div class="item">
                                     <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="lazy-load imaged w100">
                                     </div>
                                     <div class="in">
                                         <div>
@@ -151,7 +181,7 @@
                                 <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
                                 <div class="item">
                                     <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="lazy-load imaged w100">
                                     </div>
                                     <div class="in">
                                         <div>
