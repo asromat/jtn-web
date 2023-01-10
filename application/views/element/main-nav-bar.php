@@ -1,4 +1,28 @@
 <!-- Scroll Nav Menu -->
+<style>
+    div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    height: 48px;
+    margin: 0px;
+    padding-bottom: 0pc;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: #5c5555;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    font-weight: 600;
+}
+    
+</style>
+
 <div class="scrollmenu">
     <a href="<?=base_url("kanal/agama")?>">Agama</a>
     <!-- <a href="<?=base_url("kanal/arema")?>">Arema</a> -->

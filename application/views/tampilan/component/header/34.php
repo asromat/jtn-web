@@ -2,7 +2,7 @@
 <meta property="fb:admins" content="114477503528250" />
 <meta property="og:locale" content="id_ID" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="<?= $daerah['site_title'] ?>" />
+<meta property="og:title" content="Surabaya Times" />
 <meta property="og:description" content=" Jatim TIMES Media Online Mainstream Pertama di Jawa Timur, menyajikan info berita Jawa Timur yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif." />
 <meta property="og:url" content=" https://jatimtimes.com " />
 <meta property="og:site_name" content="Jatim TIMES" />
