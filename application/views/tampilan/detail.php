@@ -2,7 +2,7 @@
 
 <meta property="og:title" content="<?= $data['news_title'] ?>" />
 <meta property="og:description" content="<?= $data['news_title'] ?>" />
-<meta property="og:url" content=" https://surabaya.jatimtimes.com " />
+<meta property="og:url" content="<?= $daerah['domain']?>" />
 <meta property="og:site_name" content="Jatim TIMES" />
 <meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
 <meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
@@ -294,11 +294,13 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <img loading="lazy" src="https://risetcdn.jatimtimes.com/images/2022/10/02/dprd-kab-malang.psd1a0416a9d7b679b3.md.png" alt="image">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <?php
+                        // Ini kalau settingan di adserver cuma butuh id, bisa tembak database nanti mas,
+                        // Misal jadi gak perlu buat 1-1, cukup pasang kode derahnya. 
+                        $this->load->view("tampilan/component/iklan/".$daerah['kode']."/iklanUtama")
+                    ?>
                 </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <img loading="lazy" src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
-                </div> 
                 <!-- * Iklan -->
             </div>
         </div>
