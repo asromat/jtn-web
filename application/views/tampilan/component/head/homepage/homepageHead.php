@@ -7,18 +7,18 @@
 <title> <?= $daerah['site_title']?></title>
 <meta name="description" content="<?= $daerah['site_title']?>">
 <meta name="keywords" content="<?= $daerah['site_title']?>" />
-<meta name="image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta name="image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.png">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://www.uptdiklatkukmjatim.id/kontak/">
+<meta property="og:url" content="<?= $daerah['domain']?>">
 <meta property="og:title" content="<?= $daerah['site_title']?>">
 <meta property="og:description" content="<?= $daerah['site_title']?>">
-<meta property="og:image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta property="og:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://www.uptdiklatkukmjatim.id/kontak/">
+<meta property="twitter:url" content="<?= $daerah['domain']?>">
 <meta property="twitter:title" content="<?= $daerah['site_title']?>">
 <meta property="twitter:description" content="<?= $daerah['site_title']?>">
-<meta property="twitter:image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta property="twitter:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.png">
