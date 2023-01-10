@@ -5,7 +5,7 @@
     <?php if($this->uri->segment("1") != "baca"){
         // Ini tak bedakan Homepage dan Detail nya mas - Cuma 1 File aja
         // Detail untuk isinya ada di database tb_daerah
-        $this->load->view("tampilan/component/head/homepage/homepageHead"); 
+            $this->load->view("tampilan/component/head/homepage/homepageHead"); 
         } else {
             $this->load->view("tampilan/component/head/detail/detailHead"); 
         }        
