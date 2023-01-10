@@ -11,10 +11,10 @@
                     <?php foreach ($headline as $key => $data) {; ?>
                         <div class="item">
                             <div class="card position-relative p-1">
-                                <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
+                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
-                                    <h1 class="mb-0" style="font-size: 24px;"><?= $data['news_title'] ?></h1>
+                                    <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
                                     <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
                                     <!-- <span class="float-right fn80">
                                     <ion-icon name="eye-outline"></ion-icon></i> 5.70rb
@@ -27,8 +27,8 @@
                 </div>
                 <!-- * Slider Headline -->
                 <!-- Berita Terbaru -->
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Berita Terbaru</h1>
+                <div class="header-large-title mt-5">
+                    <h1 class="title">Berita Terbaru</h1>
                     <h4 class="subtitle">Update Bacaanmu Hari Ini</h4>
                 </div>
                 <div class="card mt-1">
@@ -51,8 +51,8 @@
             <div class="col-12 col-lg-4 mt-2">
                 <!-- Berita Populer -->
                 <div class="card">
-                    <div class="header-large-title bg-times-gradient">
-                        <h1 class="title">#Headline Berita</h1>
+                    <div class="header-large-title">
+                        <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
                     </div>
                     <div class="card-body text-left">
@@ -79,14 +79,18 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    Iklan <?= $daerah['site_title']?>
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <?php
+                        // Ini kalau settingan di adserver cuma butuh id, bisa tembak database nanti mas,
+                        // Misal jadi gak perlu buat 1-1, cukup pasang kode derahnya. 
+                        $this->load->view("tampilan/component/iklan/".$daerah['kode']."/iklanUtama")
+                    ?>
                 </div>
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
                 <div class="card mt-3">
-                    <div class="header-large-title bg-times-gradient">
-                        <h1 class="title">#Fokus Berita</h1>
+                    <div class="header-large-title">
+                        <h1 class="title">Fokus Berita</h1>
                     </div>
                     <div class="card-body text-left">
                         <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#KAISAR
@@ -106,8 +110,8 @@
         <!-- <?php $this->load->view("tampilan/component/infografis")?> -->
         <div class="row" style="margin-top: -20;">
             <div class="col-12 col-lg-4">
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Hukum dan Kriminalitas</h1>
+                <div class="header-large-title">
+                    <h1 class="title">Hukum dan Kriminalitas</h1>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -141,8 +145,8 @@
                 <!-- * Berita Terbaru -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Pendidikan</h1>
+                <div class="header-large-title mt-5">
+                    <h1 class="title">Pendidikan</h1>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -177,8 +181,8 @@
             </div>
             <div class="col-12 col-lg-4">
                 <!-- Olahraga -->
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Olahraga</h1>
+                <div class="header-large-title mt-5">
+                    <h1 class="title">Olahraga</h1>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -215,8 +219,8 @@
         <!-- TikTok -->
         <div class="row mt-2">
             <div class="col-12">
-                <div class="header-large-title bg-times-gradient">
-                    <h1 class="title">#TikTok</h1>
+                <div class="header-large-title">
+                    <h1 class="title">TikTok</h1>
                 </div>
                 <blockquote class="tiktok-embed p-0" cite="https://www.tiktok.com/@jatimtimes" data-unique-id="jatimtimes" data-embed-type="creator" style="max-width: 720px; min-width: 288px;">
                     <section> <a target="_blank" href="https://www.tiktok.com/@jatimtimes?refer=creator_embed">@jatimtimes</a> </section>
@@ -229,8 +233,8 @@
         <div class="row mt-2">
             <div class="col-12 col-lg-6">
                 <!-- Pemerintahan -->
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Pemerintahan</h1>
+                <div class="header-large-title mt-5">
+                    <h1 class="title">Pemerintahan</h1>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -265,8 +269,8 @@
             </div>
             <div class="col-12 col-lg-6">
                 <!-- Gaya -->
-                <div class="header-large-title mt-5 bg-times-gradient">
-                    <h1 class="title">#Gaya Hidup</h1>
+                <div class="header-large-title mt-5">
+                    <h1 class="title">Gaya Hidup</h1>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">

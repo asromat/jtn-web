@@ -1,3 +1,107 @@
+<!-- <link rel="canonical" href="{{ url('/')}}{{$_SERVER['REQUEST_URI'] }}">
+
+<meta property="og:title" content="<?= $data['news_title'] ?>" />
+<meta property="og:description" content="<?= $data['news_title'] ?>" />
+<meta property="og:url" content="<?= $daerah['domain']?>" />
+<meta property="og:site_name" content="Jatim TIMES" />
+<meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
+<meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
+"license": "https://www.jatimtimes.com/Redaksi",
+      "acquireLicensePage": "https://www.jatimtimes.com/Redaksi",
+      "creditText": "PT Jatim Times Network",
+"creator": {
+        "@type": "Person",
+        "name": "Redaksi JTN"
+       },
+      "copyrightNotice": "jatimtimes.com"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "headline": "<?= $data['news_title'] ?>",
+        "url": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>",
+        "datePublished": "<?= $this->fungsi->timeToStr("d - M - Y, h:i",$data['news_datepub']) ?>",
+        "image": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
+        "thumbnailUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"
+        },
+        "headline": "<?= $data['news_title'] ?>",
+        "image": [
+            "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
+        ],
+        "datePublished": "<?= $this->fungsi->timeToStr("Y-m-d",$data['news_datepub']) ?>",
+        "dateModified": "<?= $this->fungsi->timeToStr("Y-m-d",$data['news_datepub']) ?>",
+        "author": {
+            "@type": "Person",
+            "name": "<?= $data['news_writer'] ?>",
+            "url": "https://jatimtimes.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Jatim Times Network",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cdnstatic.jatimtimes.com/logo/new/jatim.png"
+            }
+        }, 
+"description": "Berita Terkini Jatimtimes -  <?= $data['news_title'] ?>. Berita Jawa Timur Terbaru."
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://jatimtimes.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Hukum dan Kriminalitas",
+            "item": "https://jatimtimes.com/kanal/hukum%20dan%20kriminalitas"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ekonomi",
+            "item": "https://jatimtimes.com/kanal/ekonomi"
+        }]
+    }
+</script>
+
+<style>
+.main-page{
+    padding-left:10px;
+    padding-right:10px;
+}
+    .post-body p {
+    font-size: 18px;
+}
+    
+</style> -->
+
 <!-- App Capsule -->
 <div id="appCapsule">
     <!-- Main Navbar -->
@@ -33,8 +137,8 @@
                     <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
                 </div>
                 <div class="bg-white mt-2">
-                    <figure class="figure shadow-sm" style="width: 100%;">
-                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: 100%;">
+                    <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
+                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: auto; height:auto">
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>
@@ -50,7 +154,7 @@
                     </p>
                     <div class="row">
                         <div class="col-2">
-                            <img src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">
+                            <img loading="lazy" src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">
                         </div>
                         <div class="col-10">
                             <h3>JOIN JATIM TIMES NETWORK</h3>
@@ -70,10 +174,34 @@
                     </div>
                 </div>
                 <!-- Iklan Bawah Berita -->
-                <div class="adbox adbox-responsive mt-4">
+                <!--<div class="adbox adbox-responsive mt-4">
                     <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
-                </div>
+                </div> -->
                 <!-- ! Iklan Bawah Berita -->
+                
+                <div class="col-12 col-lg-8 pl-2 pr-2 mt-2">
+                <!-- Slider Headline -->
+                <div class="carousel carousel-full owl-carousel owl-theme">
+                    <?php foreach ($headline as $key => $data) {; ?>
+                        <div class="item">
+                            <div class="card position-relative p-1">
+                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
+                                <div class="card-body p-1">
+                                    <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
+                                    <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
+                                    <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                                    <!-- <span class="float-right fn80">
+                                    <ion-icon name="eye-outline"></ion-icon></i> 5.70rb
+                                </span> -->
+                                </div>
+                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+                <!-- * Slider Headline -->
+                
+                
                 <!-- Berita Terkait -->
                 <?php if(!isset($similar['status'])) { ?>
                 <!-- <div class="row mt-2 mb-3">
@@ -103,9 +231,9 @@
             <div class="col-12 col-lg-4">
                 <?php if (!isset($satukanal['status'])) { ?>                
                 <!-- Satu Kanal -->
-                <div class="header-large-title bg-times-gradient">
-                    <h1 class="title">#<?=$kategori?></h1>
-                    <h4 class="subtitle">Artikel bulan ini dari kanal <?= $kategori ?></h4>
+                <div class="header-large-title">
+                    <h1 class="title"><?=$kategori?></h1>
+                    <h4 class="subtitle">Artikel terkait di <?= $kategori ?></h4>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -114,7 +242,7 @@
                                 <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
                                 <div class="item">
                                     <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
                                     </div>
                                     <div class="in">
                                         <div>
@@ -137,8 +265,8 @@
                 <!-- * Satu Kanal -->
                 <!-- Berita Populer -->
                 <div class="card mt-2">
-                    <div class="header-large-title bg-times-gradient">
-                        <h1 class="title">#Headline Berita</h1>
+                    <div class="header-large-title">
+                        <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
                     </div>
                     <div class="card-body text-left">
@@ -166,11 +294,11 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/02/dprd-kab-malang.psd1a0416a9d7b679b3.md.png" alt="image">
+                    <img loading="lazy" src="https://risetcdn.jatimtimes.com/images/2022/10/02/dprd-kab-malang.psd1a0416a9d7b679b3.md.png" alt="image">
                 </div>
                 <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
-                </div>
+                    <img loading="lazy" src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
+                </div> 
                 <!-- * Iklan -->
             </div>
         </div>

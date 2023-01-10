@@ -149,7 +149,7 @@ button:hover, button:active, button:focus {
 
 .appHeader.text-light .headerButton,
 .appHeader.text-light .pageTitle {
-  color: #fff;
+  color: #dc3545;
 }
 
 .appHeader.bg-primary, .appHeader.bg-secondary, .appHeader.bg-success, .appHeader.bg-warning, .appHeader.bg-danger, .appHeader.bg-info, .appHeader.bg-light, .appHeader.bg-dark {
@@ -173,22 +173,23 @@ button:hover, button:active, button:focus {
 }
 
 .header-large-title {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .header-large-title .title {
-  margin: 4px 0 4px 0;
-  font-size: 28px;
+  padding-left: 8px;
+  border-left: 4px solid #AD120A;
+  font-size: 20px;
   letter-spacing: -0.02em;
   line-height: 1.3em;
-  color: #ffffff;
+  color: #AD120A;
 }
 
 .header-large-title .subtitle {
   font-size: 15px;
   font-weight: 400;
   margin: 0 0 0 0;
-  color: #ffffff;
+  color: #000000;
   line-height: 1.6em;
 }
 
@@ -589,7 +590,7 @@ button:hover, button:active, button:focus {
   display: flex;
   align-items: center;
   position: relative;
-  background: #1E74FD;
+  background: #052344;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
   position: fixed;
   z-index: 100;
@@ -946,6 +947,7 @@ button:hover, button:active, button:focus {
 .col-xl-12 {
   padding-left: 8px;
   padding-right: 8px;
+  margin-top: 10px;
 }
 
 .m-0 {
@@ -1264,18 +1266,18 @@ h6 .badge {
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4 {
@@ -1539,7 +1541,6 @@ i.icon {
 .badge {
   font-size: 12px;
   line-height: 1em;
-  border-radius: 100px;
   letter-spacing: 0;
   height: 22px;
   min-width: 22px;
@@ -1552,7 +1553,7 @@ i.icon {
 
 .badge-primary,
 a.badge-primary {
-  background: #1E74FD !important;
+  background: #343a40 !important;
 }
 
 .badge-secondary,
@@ -2174,8 +2175,8 @@ a.badge-dark {
 }
 
 .btn-primary {
-  background: #1E74FD !important;
-  border-color: #1E74FD !important;
+  background: #586d7 !important;
+  border-color: #a1a1a2 !important;
   color: #ffffff !important;
 }
 
@@ -3495,12 +3496,12 @@ a.badge-dark {
 }
 
 .bg-primary {
-  background: #1E74FD !important;
+  background: #6c7c94 !important;
   color: #FFF;
 }
 
 .bg-secondary {
-  background: #0A1931 !important;
+  background: #f8f9fa !important;
   color: #FFF;
 }
 
@@ -6305,8 +6306,12 @@ textarea,
 }
 
 .blog-post .post-body {
-  padding: 0 16px;
+  padding: 0 5px;
   font-size: 18px;
+}
+
+.post-body p {
+  font-size: 18px;  
 }
 
 .blog-post .post-body img {
