@@ -1,5 +1,5 @@
 <link rel="canonical" href="{{ url('/')}}{{$_SERVER['REQUEST_URI'] }}">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="<?= $data['news_title'] ?>" />
 <meta property="og:description" content="<?= $data['news_title'] ?>" />
 <meta property="og:url" content="<?= $daerah['domain']?>" />
