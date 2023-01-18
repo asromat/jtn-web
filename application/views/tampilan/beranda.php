@@ -83,12 +83,28 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    Iklan <?= $daerah['site_title']?>
+                    <!-- Iklan <?= $daerah['site_title']?> -->
                     <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
+                </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
+                </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads3']?>"></script>
+                </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads4']?>"></script>
+                </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads5']?>"></script>
                 </div>
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
-                <div class="card mt-3">
+                <!-- <div class="card mt-3">
                     <div class="header-large-title">
                         <h1 class="title">Fokus Berita</h1>
                     </div>
@@ -102,7 +118,7 @@
                         <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#MANTAP
                             JAYA</a>
                     </div>
-                </div>
+                </div> -->
                 <!-- * Fokus Berita -->
             </div>
             <!-- * Colom ke 2 -->
