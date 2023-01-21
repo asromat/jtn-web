@@ -5,7 +5,14 @@
     <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.4.1 -->
 <ins data-revive-zoneid="6" data-revive-id="117baf6d729856b93b4ce4545fb3968c"></ins>
 <script async src="//pasangiklan.jatimtimes.com/adserver/www/delivery/asyncjs.php"></script>
-    
+<style>
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
     <div class="main-page">
         <div class="row">
             <!-- Colom ke 1 -->
@@ -15,7 +22,7 @@
                     <?php foreach ($headline as $key => $data) {; ?>
                         <div class="item">
                             <div class="card position-relative p-1">
-                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
+                                <img class="centerimg" loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 720px; width: 400px">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
                                     <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
