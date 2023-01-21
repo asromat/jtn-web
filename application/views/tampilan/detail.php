@@ -303,11 +303,6 @@
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
                     <!-- Iklan <?= $daerah['site_title']?> -->
-                    <?php
-                        // Ini kalau settingan di adserver cuma butuh id, bisa tembak database nanti mas,
-                        // Misal jadi gak perlu buat 1-1, cukup pasang kode derahnya. 
-                        $this->load->view("tampilan/component/iklan/".$daerah['kode']."/iklanUtama")
-                    ?>
                 </div>
                 <!-- * Iklan -->
             </div>
