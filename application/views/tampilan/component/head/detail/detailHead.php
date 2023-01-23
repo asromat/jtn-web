@@ -1,9 +1,9 @@
-<link rel="canonical" href="{{ url('/')}}{{$_SERVER['REQUEST_URI'] }}">
-
+<link rel="canonical" href="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $data['news_title'] ?> - Jatimtimes</title>
 <meta property="og:title" content="<?= $data['news_title'] ?>" />
 <meta property="og:description" content="Berita terkini tentang <?= $data['news_title'] ?> - Jatimtimes" />
-<meta property="og:url" content=" https://surabaya.jatimtimes.com " />
+<meta property="og:url" content="https://<?= $daerah['domain']?>"/>
 <meta property="og:site_name" content="Jatim TIMES" />
 <meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
 <meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
@@ -26,6 +26,17 @@
 <meta name="twitter:creator" content="@JatimTIMES">
 <meta name="twitter:image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>">
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "headline": "<?= $data['news_title'] ?>",
+  "url": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>",
+  "datePublished": "<?= $this->fungsi->timeToStr("Y-m-d", $data['news_datepub']) ?>",
+  "image": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
+  "thumbnailUrl" : "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
+}
+</script>
 
 <script type="application/ld+json">
     {
