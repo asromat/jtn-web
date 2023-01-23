@@ -10,7 +10,21 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+
+@media only screen and (min-width: 500px) {
+/* For tablets: */
+.imgthumb{height: 310px; width: auto;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.imgthumb{max-height: 400px; width: 100%;}
 }
 </style>
     <div class="main-page">
@@ -22,7 +36,7 @@
                     <?php foreach ($headline as $key => $data) {; ?>
                         <div class="item">
                             <div class="card position-relative p-1">
-                                <img class="centerimg" loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 720px; width: 400px">
+                                <img class="centerimg imgthumb" loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
                                     <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
@@ -62,6 +76,10 @@
             <div class="col-12 col-lg-4 mt-2">
                 <!-- Berita Populer -->
                 <div class="card">
+                    <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
+                </div>
                     <div class="header-large-title">
                         <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
@@ -91,24 +109,9 @@
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
                     <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
                     <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
                 </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads3']?>"></script>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads4']?>"></script>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads5']?>"></script>
-                </div>
+                
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
                 <!-- <div class="card mt-3">
@@ -132,6 +135,10 @@
         </div>
         <!-- <?php $this->load->view("tampilan/component/infografis")?> -->
         <div class="row" style="margin-top: -20;">
+            <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads3']?>"></script>
+                </div>
             <div class="col-12 col-lg-4">
                 <div class="header-large-title">
                     <h1 class="title">Hukum dan Kriminalitas</h1>
@@ -168,6 +175,10 @@
                 <!-- * Berita Terbaru -->
             </div>
             <div class="col-12 col-lg-4">
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads4']?>"></script>
+                </div>
                 <div class="header-large-title mt-5">
                     <h1 class="title">Pendidikan</h1>
                 </div>
@@ -203,6 +214,10 @@
                 <!-- * Berita Terbaru -->
             </div>
             <div class="col-12 col-lg-4">
+                <div class="adbox adbox-responsive mt-4">
+                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads5']?>"></script>
+                </div>
                 <!-- Olahraga -->
                 <div class="header-large-title mt-5">
                     <h1 class="title">Olahraga</h1>
@@ -394,7 +409,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous"></span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
                     <div class="owl-dots disabled"></div>
                 </div>
             </div>

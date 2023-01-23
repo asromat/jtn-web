@@ -2,10 +2,10 @@
 <meta property="fb:admins" content="114477503528250" />
 <meta property="og:locale" content="id_ID" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Surabaya Times" />
-<meta property="og:description" content=" Jatim TIMES Media Online Mainstream Pertama di Jawa Timur, menyajikan info berita Jawa Timur yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif." />
-<meta property="og:url" content=" https://jatimtimes.com " />
-<meta property="og:site_name" content="Jatim TIMES" />
+<meta property="og:title" content="Bangkalan Times" />
+<meta property="og:description" content="Media Online Mainstream Pertama di Bangkalan , menyajikan info berita Bangkalan  yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif." />
+<meta property="og:url" content=" https://bangkalan.jatimtimes.com " />
+<meta property="og:site_name" content="Bangkalan Jatim TIMES" />
 <meta property="og:image" itemprop="image" content=" " />
 <meta property="og:image:secure_url" itemprop="image" content=" " />
 <meta property="og:image:width" content="600" />
@@ -13,8 +13,8 @@
 <meta property="og:ttl" content="2419200" />
 <script async src="https://cdn.jsdelivr.net/npm/lazyhtml@1.2.3/dist/lazyhtml.min.js" crossorigin="anonymous"></script>
 <meta property="article:tag" content=" jatim times,Jawa Timur times,info berita Jawa Timur hari ini,berita terbaru Jawa Timur" />
-<meta name="keywords" content="jatim times,Jawa Timur times,info berita Jawa Timur hari ini,berita terbaru Jawa Timur" />
-<meta name="description" content=" Media Online Mainstream Pertama di Jawa Timur, menyajikan info berita Jawa Timur yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif. " />
+<meta name="keywords" content="Bangkalan TIMES, Bangkalan  times, info berita Bangkalan  hari ini, berita terbaru Bangkalan" />
+<meta name="description" content="Media Online Mainstream Pertama di Bangkalan , menyajikan info berita Bangkalan  yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif. " />
 <meta name="csrf-token" content="xTqORKaQfmONhqjSh9QFFpkYBy5bRU7DvPN6QDF2">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Cache-Control" content="public" />

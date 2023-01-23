@@ -6,7 +6,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Surabaya Times" />
 <meta property="og:description" content=" Jatim TIMES Media Online Mainstream Pertama di Jawa Timur, menyajikan info berita Jawa Timur yang membangun, menginspirasi, dan berpositif thinking berdasarkan jurnalisme positif." />
-<meta property="og:url" content=" https://jatimtimes.com " />
+<meta property="og:url" content=" https://surabaya.jatimtimes.com " />
 <meta property="og:site_name" content="Jatim TIMES" />
 <meta property="og:image" itemprop="image" content=" " />
 <meta property="og:image:secure_url" itemprop="image" content=" " />
@@ -21,7 +21,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Cache-Control" content="public" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="2022-12-11 09:53:08" />
+<meta http-equiv="Expires" content="2023-12-11 09:53:08" />
 <meta http-equiv="last-modified" content="2022-12-11 09:53:08" />
 <meta name="generator" content="Jatim TIMES 1.1">
 <meta property="article:publisher" content="https://www.facebook.com/jatimtimes" />

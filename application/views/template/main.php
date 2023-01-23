@@ -1638,7 +1638,7 @@
                 </div>
                 <div class="text-center mt-2">
                     <img src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" width="100px" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
-                    <p class="text-muted">&copy; 2016 - 2022 <a href="https://www.jatimtimes.com/" alt="Jatim Times Network">Jatim Times Network</a>.
+                    <p class="text-muted">&copy; 2016 - 2023 <a href="https://www.jatimtimes.com/" alt="Jatim Times Network">Jatim Times Network</a>.
                         <br>
                         <span class="font-weight-light">Load time: <strong>{elapsed_time}</strong> detik. Diakses melalui
                             <strong><?= $this->agent->platform() ?></strong></span>

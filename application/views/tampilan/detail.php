@@ -1,105 +1,12 @@
-<link rel="canonical" href="{{ url('/')}}{{$_SERVER['REQUEST_URI'] }}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="<?= $data['news_title'] ?>" />
-<meta property="og:description" content="<?= $data['news_title'] ?>" />
-<meta property="og:url" content="<?= $daerah['domain']?>" />
-<meta property="og:site_name" content="Jatim TIMES" />
-<meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
-<meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="315" />
-
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org/",
-        "@type": "ImageObject",
-        "contentUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
-"license": "https://www.jatimtimes.com/Redaksi",
-      "acquireLicensePage": "https://www.jatimtimes.com/Redaksi",
-      "creditText": "PT Jatim Times Network",
-"creator": {
-        "@type": "Person",
-        "name": "Redaksi JTN"
-       },
-      "copyrightNotice": "jatimtimes.com"
-    }
-</script>
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        "headline": "<?= $data['news_title'] ?>",
-        "url": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>",
-        "datePublished": "<?= $this->fungsi->timeToStr("d - M - Y, h:i",$data['news_datepub']) ?>",
-        "image": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
-        "thumbnailUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
-    }
-</script>
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"
-        },
-        "headline": "<?= $data['news_title'] ?>",
-        "image": [
-            "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
-        ],
-        "datePublished": "<?= $this->fungsi->timeToStr("Y-m-d",$data['news_datepub']) ?>",
-        "dateModified": "<?= $this->fungsi->timeToStr("Y-m-d",$data['news_datepub']) ?>",
-        "author": {
-            "@type": "Person",
-            "name": "<?= $data['news_writer'] ?>",
-            "url": "https://jatimtimes.com"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Jatim Times Network",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://cdnstatic.jatimtimes.com/logo/new/jatim.png"
-            }
-        }, 
-"description": "Berita Terkini Jatimtimes -  <?= $data['news_title'] ?>. Berita Jawa Timur Terbaru."
-    }
-</script>
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://jatimtimes.com"
-        }, {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Hukum dan Kriminalitas",
-            "item": "https://jatimtimes.com/kanal/hukum%20dan%20kriminalitas"
-        }, {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Ekonomi",
-            "item": "https://jatimtimes.com/kanal/ekonomi"
-        }]
-    }
-</script>
-
 <style>
-.main-page{
-    padding-left:10px;
-    padding-right:10px;
-}
+    .main-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .post-body p {
-    font-size: 18px;
-}
-    
+        font-size: 18px;
+    }
 </style>
 
 <!-- App Capsule -->
@@ -109,15 +16,67 @@
     <!-- ! Main Navbar -->
     <!-- Content -->
     <div class="main-page">
+<!-- adsense atas -->        
+<div id="google-ads-1"></div>
+<script type="text/javascript">
+
+    /* Calculate the width of available ad space */
+    ad = document.getElementById('google-ads-1');
+
+    if (ad.getBoundingClientRect().width) {
+        adWidth = ad.getBoundingClientRect().width; // for modern browsers
+    } else {
+        adWidth = ad.offsetWidth; // for old IE
+    }
+
+    /* Replace ca-pub-XXX with your AdSense Publisher ID */
+    google_ad_client = "ca-pub-9791561448547714";
+
+    /* Replace 1234567890 with the AdSense Ad Slot ID */
+    google_ad_slot = "5345222021";
+
+    /* Do not change anything after this line */
+    if ( adWidth >= 728 )
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+    else if ( adWidth >= 468 )
+      google_ad_size = ["320", "100"];  /* Banner (468 x 60) */
+    else if ( adWidth >= 336 )
+      google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
+    else if ( adWidth >= 300 )
+      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+    else if ( adWidth >= 250 )
+      google_ad_size = ["250", "250"]; /* Square (250 x 250) */
+    else if ( adWidth >= 200 )
+      google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
+    else if ( adWidth >= 180 )
+      google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
+    else
+      google_ad_size = ["125", "125"]; /* Button (125 x 125) */
+
+    document.write (
+     '<ins class="adsbygoogle" style="display:inline-block;width:'
+      + google_ad_size[0] + 'px;height:'
+      + google_ad_size[1] + 'px" data-ad-client="'
+      + google_ad_client + '" data-ad-slot="'
+      + google_ad_slot + '"></ins>'
+    );
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+</script>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+<!-- adsense atas --> 
+
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="<?=base_url()?>">
+                        <li class="breadcrumb-item"><a href="<?= base_url() ?>">
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Baca</li>
-                        <li class="breadcrumb-item active" aria-current="page"><?=$kategori?></li>
+                        <li class="breadcrumb-item active" aria-current="page">Baca</li>
+                        <li class="breadcrumb-item active" aria-current="page"><?= $kategori ?></li>
                     </ol>
                 </nav>
             </div>
@@ -125,15 +84,15 @@
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="p-2 bg-white rounded shadow-sm">
-                    <a href="<?= base_url()?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1"><?= $kategori ?></span></a>
+                    <a href="<?= base_url() ?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1"><?= $kategori ?></span></a>
                     <!-- <a href="#" class="d-block text-primary fn-poppins font-italic mt-1">OTT KPK di MA</a> -->
                     <h1><?= $data['news_title'] ?></h1>
                     <div>
                         <p font-size="15px">
-                            <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor?>
-                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i",$data['news_datepub']) ?></small>
+                            <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor ?>
+                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></small>
                         </p>
-                    </div>                    
+                    </div>
                     <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
                 </div>
                 <div class="bg-white mt-2">
@@ -144,17 +103,17 @@
                 </div>
                 <div class="blog-post mt-1" style="width: 100%;">
                     <div class="post-body">
-                    <?= $data['news_content'] ?>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads6']?>"></script>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads7']?>"></script>
-                </div>
-                <hr>
+                        <?= $data['news_content'] ?>
+                    </div>
+                    <div class="adbox adbox-responsive mt-4">
+                        <!-- Iklan <?= $daerah['site_title'] ?> -->
+                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>
+                    </div>
+                    <div class="adbox adbox-responsive mt-4">
+                        <!-- Iklan <?= $daerah['site_title'] ?> -->
+                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads7'] ?>"></script>
+                    </div>
+                    <hr>
                     <!-- <h3>Topik</h3> -->
                     <!-- <p>
                         <span class="badge badge-primary">Tag 1</span> <span class="badge badge-primary">Tag
@@ -186,33 +145,33 @@
                     <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
                 </div> -->
                 <!-- ! Iklan Bawah Berita -->
-                
+
                 <div class="col-12 col-lg-8 pl-2 pr-2 mt-2">
-                <!-- Slider Headline -->
-                <div class="carousel carousel-full owl-carousel owl-theme">
-                    <?php foreach ($headline as $key => $data) {; ?>
-                        <div class="item">
-                            <div class="card position-relative p-1">
-                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
-                                <div class="card-body p-1">
-                                    <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
-                                    <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
-                                    <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                    <!-- <span class="float-right fn80">
+                    <!-- Slider Headline -->
+                    <div class="carousel carousel-full owl-carousel owl-theme">
+                        <?php foreach ($headline as $key => $data) {; ?>
+                            <div class="item">
+                                <div class="card position-relative p-1">
+                                    <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
+                                    <div class="card-body p-1">
+                                        <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
+                                        <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
+                                        <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                                        <!-- <span class="float-right fn80">
                                     <ion-icon name="eye-outline"></ion-icon></i> 5.70rb
                                 </span> -->
+                                    </div>
+                                    <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>" class="stretched-link"></a>
                                 </div>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>" class="stretched-link"></a>
                             </div>
-                        </div>
-                    <?php } ?>
-                </div>
-                <!-- * Slider Headline -->
-                
-                
-                <!-- Berita Terkait -->
-                <?php if(!isset($similar['status'])) { ?>
-                <!-- <div class="row mt-2 mb-3">
+                        <?php } ?>
+                    </div>
+                    <!-- * Slider Headline -->
+
+
+                    <!-- Berita Terkait -->
+                    <?php if (!isset($similar['status'])) { ?>
+                        <!-- <div class="row mt-2 mb-3">
                     <div class="col-12">
                         <div class="header-large-title mt-5 bg-times-gradient">
                             <h1 class="title">#Berita Terkait</h1>
@@ -226,50 +185,51 @@
                                         <p><?= $data['news_title'] ?></p>
                                         <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
                                     </div>
-                                    <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>" class="stretched-link"></a>
+                                    <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>" class="stretched-link"></a>
                                 </div>
                             </div>
                             <?php } ?>
                         </div>
                     </div>
                 </div> -->
-                <?php } ?>
-                <!-- * Berita Terkait -->
+                    <?php } ?>
+                    <!-- * Berita Terkait -->
+                </div>
             </div>
             <div class="col-12 col-lg-4">
-                <?php if (!isset($satukanal['status'])) { ?>                
-                <!-- Satu Kanal -->
-                <div class="header-large-title">
-                    <h1 class="title"><?=$kategori?></h1>
-                    <h4 class="subtitle">Artikel terkait di <?= $kategori ?></h4>
-                </div>
-                <div class="card mt-1">
-                    <ul class="listview image-listview media">
-                        <?php foreach ($satukanal as $key => $data) {; ?>
-                            <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                <?php if (!isset($satukanal['status'])) { ?>
+                    <!-- Satu Kanal -->
+                    <div class="header-large-title">
+                        <h1 class="title"><?= $kategori ?></h1>
+                        <h4 class="subtitle">Artikel terkait di <?= $kategori ?></h4>
+                    </div>
+                    <div class="card mt-1">
+                        <ul class="listview image-listview media">
+                            <?php foreach ($satukanal as $key => $data) {; ?>
+                                <li>
+                                    <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+                                        <div class="item">
+                                            <div class="imageWrapper">
+                                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
                                             </div>
+                                            <div class="in">
+                                                <div>
+                                                    <header class="text-primary fn80 text-uppercase font-weight-bold">
+                                                    </header>
+                                                    <h3><?= $data['news_title'] ?></h3>
+                                                    <div class="text-muted d-block fn60">
+                                                        <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                                                    </div>
 
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-                <?php } ?>                
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                <?php } ?>
                 <!-- * Satu Kanal -->
                 <!-- Berita Populer -->
                 <div class="card mt-2">
@@ -302,12 +262,12 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>
                 </div>
                 <!-- * Iklan -->
             </div>
         </div>
+        <!-- ! Content -->
     </div>
-    <!-- ! Content -->
+    <!-- * App Sidebar -->
 </div>
-<!-- * App Sidebar -->
