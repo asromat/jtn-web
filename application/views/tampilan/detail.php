@@ -131,10 +131,10 @@
                     <div>
                         <p font-size="15px">
                             <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor ?>
-                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></small>
                         </p>
                     </div>
-                    <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
+                    <p class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></p>
+                    <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp, twitter, telegram"></div>
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
@@ -272,6 +272,16 @@
                     </div>
                 <?php } ?>
                 <!-- * Satu Kanal -->
+                <!-- Fokus Berita -->
+                <div class="card mt-3">
+                    <div class="header-large-title">
+                        <h1 class="title">Topik Khusus</h1>
+                    </div>
+                    <div class="card-body text-left">
+                        <a href="<?= base_url()?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
+                    </div>
+                </div>
+                <!-- * Fokus Berita -->
                 <!-- Berita Populer -->
                 <div class="card mt-2">
                     <div class="header-large-title">

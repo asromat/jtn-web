@@ -1236,8 +1236,9 @@
     <link rel="icon" type="image/png" href="<?= base_url() ?>/assets/img/favicon.png" sizes="32x32" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>/assets/img/icon/192x192.png" />
     <!-- Share -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css">
+    <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <!-- <link rel="preload" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css"> -->
     <!-- !Share -->
     <!-- Main CSS -->
     <!-- <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css" /> -->
@@ -1247,6 +1248,10 @@
     </noscript>
     <link rel="manifest" href="__manifest.json" />
     <!-- Custom CSS -->
+    <!-- Share Button -->
+    <style>
+        .ss-btn{height:30px;padding:3px 3px 3px 3px;background:#888;color:#fff!important;border-radius:3px;margin:4px;display:inline-block;cursor:pointer;text-align:center;transition:.2s ease all}.ss-btn:hover{text-decoration:none;color:#fff;filter:brightness(110%)}.ss-black .ss-btn{background:#000!important}.ss-dark .ss-btn{background:#444!important}.ss-gray .ss-btn{background:#888!important;color:#000!important}.ss-light .ss-btn{background:#ddd!important;color:#444!important}.ss-outline .ss-btn{background:#fff!important;color:#444!important;border:1px solid #bbb!important}.ss-circle .ss-btn{border-radius:50%;min-width:30px}.ss-flat .ss-btn{border-radius:0}.ss-pill .ss-btn{border-radius:24px}.ss-shadow .ss-btn{box-shadow:0 .5rem 1rem rgba(54,54,54,.28)}.ss-grow .ss-btn:hover{transform:scale(1.1)}.ss-shrink .ss-btn:hover{transform:scale(.9)}.ss-rotate .ss-btn:hover{transform:rotate(-10deg)}.ss-float .ss-btn:hover{transform:translate(0,-10px)}.ss-strait .ss-btn{margin:0;border-radius:0}.ss-strait{border-radius:3px;overflow:hidden;display:table;margin:0 auto}.ss-fixed{position:fixed;z-index:999;left:0;right:0}.ss-bottom{display:inline-block;text-align:center;bottom:10px}.ss-top{display:inline-block;text-align:center;top:10px}.ss-left,.ss-right{top:50%;transform:translateY(-50%)}.ss-left{left:10px}.ss-right{left:unset;right:10px}.ss-left .ss-btn,.ss-right .ss-btn{display:table;width:140px}.ss-left[data-ss-content=false] .ss-btn,.ss-right[data-ss-content=false] .ss-btn{width:30px}@media (min-width:768px){.ss-responsive .ss-btn-messenger,.ss-responsive .ss-btn-share,.ss-responsive .ss-btn-sms,.ss-responsive .ss-btn-telegram,.ss-responsive .ss-btn-viber{display:none}}
+    </style>
     <style>
         div.scrollmenu {
             overflow: auto;
@@ -1388,9 +1393,9 @@
 
     <!-- Search Component -->
     <div id="search" class="appHeader">
-        <form class="search-form">
+        <form class="search-form" method="get" action="<?=base_url("search")?>">
             <div class="form-group searchbox">
-                <input type="text" class="form-control" placeholder="Search..." />
+                <input type="text" class="form-control" name="keyword" placeholder="Search..." />
                 <i class="input-icon">
                     <ion-icon name="search-outline"></ion-icon>
                 </i>

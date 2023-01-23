@@ -125,4 +125,19 @@ class News_m extends CI_Model
         $response = json_decode($res->getBody()->getContents(), true);
         return $response;
     }
-}
+
+    public function getTag($keyword,$limit = null,$start = null)
+    {
+        $res = $this->_client->request('GET', 'news/tag/', [
+            'query' => [
+                'keyword' => $keyword,
+                'limit' => $limit,
+                'start' => $start
+                ]
+            ]);
+            
+            $response = json_decode($res->getBody()->getContents(), true);
+            return $response;
+        }
+    }
+    

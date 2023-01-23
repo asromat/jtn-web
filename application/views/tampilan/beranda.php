@@ -111,21 +111,14 @@
                 </div>
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
-                <!-- <div class="card mt-3">
+                <div class="card mt-3">
                     <div class="header-large-title">
-                        <h1 class="title">Fokus Berita</h1>
+                        <h1 class="title">Topik Khusus</h1>
                     </div>
                     <div class="card-body text-left">
-                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#KAISAR
-                            SAMBO</a>
-                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#KANJURUHAN
-                            DISASTER</a>
-                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#NARUTO
-                            UZUMAKI</a>
-                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#MANTAP
-                            JAYA</a>
+                        <a href="<?= base_url()?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
                     </div>
-                </div> -->
+                </div>
                 <!-- * Fokus Berita -->
             </div>
             <!-- * Colom ke 2 -->

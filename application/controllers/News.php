@@ -29,7 +29,7 @@ class News extends CI_Controller
 		$this->template->load('template/main', 'tampilan/beranda', $data);
 	}
 	
-	// Untuk Search tag, kanal, dan fokus nantinya
+	// Untuk Search kanal
 	public function kanal()
 	{
 		$data['daerah'] = $this->data['daerah'];
@@ -37,6 +37,31 @@ class News extends CI_Controller
 		$data['kanal'] = $this->uri->segment("2");
 		$data['headline'] = $this->news_m->getHeadline();
 		$data['footer_script'] = "footer/search";
+		$this->template->load('template/main', 'tampilan/search', $data);
+	}
+
+	// Untuk Search tag
+	public function tag()
+	{
+		$data['daerah'] = $this->data['daerah'];
+		
+		$data['kanal'] = str_replace(["%20","-"],[" "," "],$this->uri->segment("2"));;
+		$data['headline'] = $this->news_m->getHeadline();
+		$data['footer_script'] = "footer/tag";
+		$this->template->load('template/main', 'tampilan/search', $data);
+	}
+
+	// Untuk Search tag
+	public function search()
+	{
+		$data['daerah'] = $this->data['daerah'];
+		$katakunci = $_GET['keyword'];
+
+		!isset($katakunci) ? redirect() : "";
+		
+		$data['kanal'] = $katakunci;
+		$data['headline'] = $this->news_m->getHeadline();
+		$data['footer_script'] = "footer/tag";
 		$this->template->load('template/main', 'tampilan/search', $data);
 	}
 	
@@ -113,7 +138,38 @@ class News extends CI_Controller
 							<div class="text-muted d-block fn60">
 							<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
 							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+                ';
+			}
+		}
+		echo $output;
+	}
 
+	// Load more tag, dll
+	public function loadMoreTag()
+	{
+		$output = '';
+		$keyword = $this->input->post("keyword");
+		$data = $this->news_m->getTag($keyword,$this->input->post("limit"),$this->input->post("start"));
+		if (isset($data[0]['news_id'])) {
+			foreach ($data as $key => $row) {
+				$output .= '
+				<a href="'.base_url().'baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
+				<div class="item">
+					<div class="imageWrapper">
+						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
+					</div>
+					<div class="in">
+						<div>
+							<header class="text-primary fn80 text-uppercase font-weight-bold">'.urldecode($this->input->post("kanal")).'
+							</header>
+							<h3>'.$row['news_title'].'</h3>
+							<div class="text-muted d-block fn60">
+							<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
+							</div>
 						</div>
 					</div>
 				</div>
