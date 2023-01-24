@@ -201,18 +201,17 @@
       <h2 class="titlebox">Berita terkait</h2>
       <?php foreach ($satukanal as $key => $data) {; ?>        
         <p><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
+        <hr>
       <?php } ?>
     </div>
   </div>
-    
-    
-    
   
   <div class="detail-artikel berikutnya margin-top-lg">
     <div class="blockbox overflow margin-bottom-xs">
       <h2 class="titlebox">Rekomendasi</h2>
       <?php foreach ($headline as $key => $data) {; ?>
         <p><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
+        <hr>
       <?php } ?>
            
     </div> <!-- end box rekomendasi -->
