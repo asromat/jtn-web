@@ -16,60 +16,6 @@
     <!-- ! Main Navbar -->
     <!-- Content -->
     <div class="main-page">
-<<<<<<< HEAD
-<!-- adsense atas -->        
-<div id="google-ads-1"></div>
-<script type="text/javascript">
-
-    /* Calculate the width of available ad space */
-    ad = document.getElementById('google-ads-1');
-
-    if (ad.getBoundingClientRect().width) {
-        adWidth = ad.getBoundingClientRect().width; // for modern browsers
-    } else {
-        adWidth = ad.offsetWidth; // for old IE
-    }
-
-    /* Replace ca-pub-XXX with your AdSense Publisher ID */
-    google_ad_client = "ca-pub-9791561448547714";
-
-    /* Replace 1234567890 with the AdSense Ad Slot ID */
-    google_ad_slot = "5345222021";
-
-    /* Do not change anything after this line */
-    if ( adWidth >= 728 )
-      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
-    else if ( adWidth >= 468 )
-      google_ad_size = ["320", "100"];  /* Banner (468 x 60) */
-    else if ( adWidth >= 336 )
-      google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
-    else if ( adWidth >= 300 )
-      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
-    else if ( adWidth >= 250 )
-      google_ad_size = ["250", "250"]; /* Square (250 x 250) */
-    else if ( adWidth >= 200 )
-      google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
-    else if ( adWidth >= 180 )
-      google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
-    else
-      google_ad_size = ["125", "125"]; /* Button (125 x 125) */
-
-    document.write (
-     '<ins class="adsbygoogle" style="display:inline-block;width:'
-      + google_ad_size[0] + 'px;height:'
-      + google_ad_size[1] + 'px" data-ad-client="'
-      + google_ad_client + '" data-ad-slot="'
-      + google_ad_slot + '"></ins>'
-    );
-
-    (adsbygoogle = window.adsbygoogle || []).push({});
-
-</script>
-<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-<!-- adsense atas --> 
-
-=======
         <div>
             <!-- adsense atas -->
             <div id="google-ads-1"></div>
@@ -122,7 +68,6 @@
             <!-- adsense atas -->
 
         </div>
->>>>>>> 49b2ae041be57104ce96b953fe511d46c31882fd
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
@@ -145,17 +90,10 @@
                     <div>
                         <p font-size="15px">
                             <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor ?>
-<<<<<<< HEAD
-                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></small>
-                        </p>
-                    </div>
-                    <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
-=======
                         </p>
                     </div>
                     <p class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></p>
                     <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp, twitter, telegram"></div>
->>>>>>> 49b2ae041be57104ce96b953fe511d46c31882fd
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
