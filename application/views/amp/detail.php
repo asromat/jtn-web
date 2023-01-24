@@ -210,7 +210,9 @@
     <div class="blockbox overflow margin-bottom-xs">
       <h2 class="titlebox">Rekomendasi</h2>
       <?php foreach ($headline as $key => $data) {; ?>
-        <p><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
+        <p>
+        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" width="50px" height="50px">
+        <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
         <hr>
       <?php } ?>
            
