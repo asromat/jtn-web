@@ -22,7 +22,6 @@ class Amp extends CI_Controller
 		$data['data'] = $this->news_m->getDetail($versionData['id'])[0];
 		// $data['footer_script'] = "footer/beranda";
 		$data['headline'] = $this->news_m->getHeadline();
-		$data['similar'] = $this->news_m->getSimilar("arema",$data['data']['catnews_id']);
 		// test($data['similar']);
 		$data['satukanal'] = $this->news_m->getSameCategory($data['data']['catnews_id']);
 		$data['kategori'] = $this->news_m->getCategoryData("catnews_id",$data['data']['catnews_id'])[0]['catnews_title'];
