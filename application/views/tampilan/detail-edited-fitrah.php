@@ -1,3 +1,96 @@
+<link rel="canonical" href="{{ url('/')}}{{$_SERVER['REQUEST_URI'] }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="<?= $data['news_title'] ?>" />
+<meta property="og:description" content="<?= $data['news_title'] ?>" />
+<meta property="og:url" content="<?= $daerah['domain'] ?>" />
+<meta property="og:site_name" content="Jatim TIMES" />
+<meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
+<meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
+        "license": "https://www.jatimtimes.com/Redaksi",
+        "acquireLicensePage": "https://www.jatimtimes.com/Redaksi",
+        "creditText": "PT Jatim Times Network",
+        "creator": {
+            "@type": "Person",
+            "name": "Redaksi JTN"
+        },
+        "copyrightNotice": "jatimtimes.com"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "headline": "<?= $data['news_title'] ?>",
+        "url": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>",
+        "datePublished": "<?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?>",
+        "image": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>",
+        "thumbnailUrl": "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"
+        },
+        "headline": "<?= $data['news_title'] ?>",
+        "image": [
+            "<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>"
+        ],
+        "datePublished": "<?= $this->fungsi->timeToStr("Y-m-d", $data['news_datepub']) ?>",
+        "dateModified": "<?= $this->fungsi->timeToStr("Y-m-d", $data['news_datepub']) ?>",
+        "author": {
+            "@type": "Person",
+            "name": "<?= $data['news_writer'] ?>",
+            "url": "https://jatimtimes.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Jatim Times Network",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cdnstatic.jatimtimes.com/logo/new/jatim.png"
+            }
+        },
+        "description": "Berita Terkini Jatimtimes -  <?= $data['news_title'] ?>. Berita Jawa Timur Terbaru."
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://jatimtimes.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Hukum dan Kriminalitas",
+            "item": "https://jatimtimes.com/kanal/hukum%20dan%20kriminalitas"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ekonomi",
+            "item": "https://jatimtimes.com/kanal/ekonomi"
+        }]
+    }
+</script>
+
 <style>
     .main-page {
         padding-left: 10px;
@@ -16,113 +109,6 @@
     <!-- ! Main Navbar -->
     <!-- Content -->
     <div class="main-page">
-<<<<<<< HEAD
-<!-- adsense atas -->        
-<div id="google-ads-1"></div>
-<script type="text/javascript">
-
-    /* Calculate the width of available ad space */
-    ad = document.getElementById('google-ads-1');
-
-    if (ad.getBoundingClientRect().width) {
-        adWidth = ad.getBoundingClientRect().width; // for modern browsers
-    } else {
-        adWidth = ad.offsetWidth; // for old IE
-    }
-
-    /* Replace ca-pub-XXX with your AdSense Publisher ID */
-    google_ad_client = "ca-pub-9791561448547714";
-
-    /* Replace 1234567890 with the AdSense Ad Slot ID */
-    google_ad_slot = "5345222021";
-
-    /* Do not change anything after this line */
-    if ( adWidth >= 728 )
-      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
-    else if ( adWidth >= 468 )
-      google_ad_size = ["320", "100"];  /* Banner (468 x 60) */
-    else if ( adWidth >= 336 )
-      google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
-    else if ( adWidth >= 300 )
-      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
-    else if ( adWidth >= 250 )
-      google_ad_size = ["250", "250"]; /* Square (250 x 250) */
-    else if ( adWidth >= 200 )
-      google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
-    else if ( adWidth >= 180 )
-      google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
-    else
-      google_ad_size = ["125", "125"]; /* Button (125 x 125) */
-
-    document.write (
-     '<ins class="adsbygoogle" style="display:inline-block;width:'
-      + google_ad_size[0] + 'px;height:'
-      + google_ad_size[1] + 'px" data-ad-client="'
-      + google_ad_client + '" data-ad-slot="'
-      + google_ad_slot + '"></ins>'
-    );
-
-    (adsbygoogle = window.adsbygoogle || []).push({});
-
-</script>
-<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-<!-- adsense atas --> 
-
-=======
-        <div>
-            <!-- adsense atas -->
-            <div id="google-ads-1"></div>
-            <script type="text/javascript">
-                /* Calculate the width of available ad space */
-                ad = document.getElementById('google-ads-1');
-
-                if (ad.getBoundingClientRect().width) {
-                    adWidth = ad.getBoundingClientRect().width; // for modern browsers
-                } else {
-                    adWidth = ad.offsetWidth; // for old IE
-                }
-
-                /* Replace ca-pub-XXX with your AdSense Publisher ID */
-                google_ad_client = "ca-pub-9791561448547714";
-
-                /* Replace 1234567890 with the AdSense Ad Slot ID */
-                google_ad_slot = "5345222021";
-
-                /* Do not change anything after this line */
-                if (adWidth >= 728)
-                    google_ad_size = ["728", "90"]; /* Leaderboard 728x90 */
-                else if (adWidth >= 468)
-                    google_ad_size = ["320", "100"]; /* Banner (468 x 60) */
-                else if (adWidth >= 336)
-                    google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
-                else if (adWidth >= 300)
-                    google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
-                else if (adWidth >= 250)
-                    google_ad_size = ["250", "250"]; /* Square (250 x 250) */
-                else if (adWidth >= 200)
-                    google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
-                else if (adWidth >= 180)
-                    google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
-                else
-                    google_ad_size = ["125", "125"]; /* Button (125 x 125) */
-
-                document.write(
-                    '<ins class="adsbygoogle" style="display:inline-block;width:' +
-                    google_ad_size[0] + 'px;height:' +
-                    google_ad_size[1] + 'px" data-ad-client="' +
-                    google_ad_client + '" data-ad-slot="' +
-                    google_ad_slot + '"></ins>'
-                );
-
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-            </script>
-            <!-- adsense atas -->
-
-        </div>
->>>>>>> 49b2ae041be57104ce96b953fe511d46c31882fd
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
@@ -145,17 +131,10 @@
                     <div>
                         <p font-size="15px">
                             <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor ?>
-<<<<<<< HEAD
-                            <small class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></small>
-                        </p>
-                    </div>
-                    <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp,twitter,telegram,instagram,email" style="size: 10px;"></div>
-=======
                         </p>
                     </div>
                     <p class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></p>
                     <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp, twitter, telegram"></div>
->>>>>>> 49b2ae041be57104ce96b953fe511d46c31882fd
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
@@ -299,7 +278,7 @@
                         <h1 class="title">Topik Khusus</h1>
                     </div>
                     <div class="card-body text-left">
-                        <a href="<?= base_url() ?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
+                        <a href="<?= base_url()?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
                     </div>
                 </div>
                 <!-- * Fokus Berita -->

@@ -47,6 +47,19 @@ class Fungsi
         }
     }
 
+    function cekUrlAmp()
+    {
+        $url = $this->ci->uri->segment('3');
+        if (is_numeric($url)){
+            // echo "V1";
+            $data['id'] = $this->ci->uri->segment("3");
+            $data['judul'] = $this->ci->uri->segment("6");
+            return $data;
+        } else {
+            // echo "V2";
+        }
+    }
+
     function timeToStr($tipe = null, $value = null)
     {
         $tanggal = date($tipe,strtotime($value));

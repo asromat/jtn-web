@@ -5,28 +5,7 @@
     <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.4.1 -->
 <ins data-revive-zoneid="6" data-revive-id="117baf6d729856b93b4ce4545fb3968c"></ins>
 <script async src="//pasangiklan.jatimtimes.com/adserver/www/delivery/asyncjs.php"></script>
-<style>
-.centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.owl-carousel .owl-item img {
-    display: block;
-    width: auto;
-}
-
-@media only screen and (min-width: 500px) {
-/* For tablets: */
-.imgthumb{height: 310px; width: auto;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-.imgthumb{max-height: 400px; width: 100%;}
-}
-</style>
+    
     <div class="main-page">
         <div class="row">
             <!-- Colom ke 1 -->
@@ -36,7 +15,7 @@
                     <?php foreach ($headline as $key => $data) {; ?>
                         <div class="item">
                             <div class="card position-relative p-1">
-                                <img class="centerimg imgthumb" loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']">
+                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
                                 <div class="card-body p-1">
                                     <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
                                     <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
@@ -76,10 +55,6 @@
             <div class="col-12 col-lg-4 mt-2">
                 <!-- Berita Populer -->
                 <div class="card">
-                    <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
-                </div>
                     <div class="header-large-title">
                         <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
@@ -109,17 +84,27 @@
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
                     <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
+                    <?php
+                        // Ini kalau settingan di adserver cuma butuh id, bisa tembak database nanti mas,
+                        // Misal jadi gak perlu buat 1-1, cukup pasang kode derahnya. 
+                        $this->load->view("tampilan/component/iklan/".$daerah['kode']."/iklanUtama")
+                    ?>
                 </div>
-                
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
                 <div class="card mt-3">
                     <div class="header-large-title">
-                        <h1 class="title">Topik Khusus</h1>
+                        <h1 class="title">Fokus Berita</h1>
                     </div>
                     <div class="card-body text-left">
-                        <a href="<?= base_url()?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
+                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#KAISAR
+                            SAMBO</a>
+                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#KANJURUHAN
+                            DISASTER</a>
+                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#NARUTO
+                            UZUMAKI</a>
+                        <a class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#MANTAP
+                            JAYA</a>
                     </div>
                 </div>
                 <!-- * Fokus Berita -->
@@ -128,10 +113,6 @@
         </div>
         <!-- <?php $this->load->view("tampilan/component/infografis")?> -->
         <div class="row" style="margin-top: -20;">
-            <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads3']?>"></script>
-                </div>
             <div class="col-12 col-lg-4">
                 <div class="header-large-title">
                     <h1 class="title">Hukum dan Kriminalitas</h1>
@@ -168,10 +149,6 @@
                 <!-- * Berita Terbaru -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads4']?>"></script>
-                </div>
                 <div class="header-large-title mt-5">
                     <h1 class="title">Pendidikan</h1>
                 </div>
@@ -207,10 +184,6 @@
                 <!-- * Berita Terbaru -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads5']?>"></script>
-                </div>
                 <!-- Olahraga -->
                 <div class="header-large-title mt-5">
                     <h1 class="title">Olahraga</h1>
@@ -402,7 +375,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous"></span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
                     <div class="owl-dots disabled"></div>
                 </div>
             </div>

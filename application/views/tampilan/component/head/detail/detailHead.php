@@ -3,7 +3,7 @@
 <title><?= $data['news_title'] ?> - Jatimtimes</title>
 <meta property="og:title" content="<?= $data['news_title'] ?>" />
 <meta property="og:description" content="Berita terkini tentang <?= $data['news_title'] ?> - Jatimtimes" />
-<meta property="og:url" content="https://<?= $daerah['domain']?>"/>
+<meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"/>
 <meta property="og:site_name" content="Jatim TIMES" />
 <meta property="og:image" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />
 <meta property="og:image:secure_url" itemprop="image" content="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" />

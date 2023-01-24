@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-12 col-lg-8">
                 <!-- Hasil Pencarian -->
-                <div class="header-large-title bg-times-gradient">
+                <div class="header-large-title">
                     <h1 class="title text-uppercase ">#<?= urldecode($kanal)?></h1>
                     <h4 class="subtitle text-uppercase">Berita Seputar <?= urldecode($kanal)?></h4>
                 </div>
@@ -42,7 +42,7 @@
             <div class="col-12 col-lg-4">
                 <!-- Berita Populer -->
                 <div class="card">
-                <div class="header-large-title bg-times-gradient">
+                <div class="header-large-title">
                         <h1 class="title">#Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
                     </div>
@@ -70,10 +70,10 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/02/dprd-kab-malang.psd1a0416a9d7b679b3.md.png" alt="image">
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
                 </div>
                 <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
                 </div>
                 <!-- ! Iklan -->
             </div>
