@@ -200,7 +200,17 @@
     <div class="blockbox overflow margin-bottom-xs">
       <h2 class="titlebox">Berita terkait</h2>
       <?php foreach ($satukanal as $key => $data) {; ?>        
-        <p><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
+        <div class="card-box sq102 margin-bottom-sm">
+          <figure class="img-card">
+            <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+              <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="">
+            </a>
+          </figure>
+          <article class="text-card">
+              <h3 class="title line3"><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></h3>
+              <h4 class="date"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></h4>
+          </article>
+      </div>
         <hr>
       <?php } ?>
     </div>
@@ -210,9 +220,17 @@
     <div class="blockbox overflow margin-bottom-xs">
       <h2 class="titlebox">Rekomendasi</h2>
       <?php foreach ($headline as $key => $data) {; ?>
-        <p>
-        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" width="50px" height="50px">
-        <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></p>
+        <div class="card-box sq102 margin-bottom-sm">
+          <figure class="img-card">
+            <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+              <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="">
+            </a>
+          </figure>
+          <article class="text-card">
+              <h3 class="title line3"><a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>"><?= $data['news_title'] ?></a></h3>
+              <h4 class="date"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></h4>
+          </article>
+      </div>
         <hr>
       <?php } ?>
            
