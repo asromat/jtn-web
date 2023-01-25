@@ -18,3 +18,8 @@ function timeToHms($date)
 	echo $tanggal;
 }
 
+function urlToAmp($url)
+{
+	$url = str_replace("/baca/","/amp/baca/",$url);
+	echo $url;
+}

@@ -1,4 +1,5 @@
 <link rel="canonical" href="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+<link rel="cannonical" href=<?php urlToAmp(current_url())?>>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $data['news_title'] ?> - Jatimtimes</title>
 <meta property="og:title" content="<?= $data['news_title'] ?>" />
