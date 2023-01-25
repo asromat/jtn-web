@@ -23,3 +23,9 @@ function urlToAmp($url)
 	$url = str_replace("/baca/","/amp/baca/",$url);
 	echo $url;
 }
+
+function ampToUrl($url)
+{
+	$url = str_replace("/amp/baca/","/baca/",$url);
+	echo $url;
+}
