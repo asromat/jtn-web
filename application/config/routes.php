@@ -50,10 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'news';
+$route['sitemap\.xml'] = 'sitemap/index';
 $route['kanal/(:any)'] = 'news/kanal/';
 $route['tag/(:any)'] = 'news/tag/';
 $route['search'] = 'news/search/';
 $route['baca/(:any)/(:any)/(:any)/(:any)'] = 'news/detail/';
 $route['(:any)'] = 'page/static/';
+
 $route['404_override'] = 'err';
 $route['translate_uri_dashes'] = FALSE;
