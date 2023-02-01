@@ -69,10 +69,8 @@ class News extends CI_Controller
 	public function detail()
 	{
 		$data['daerah'] = $this->data['daerah'];
-		
 		//Cek URL Lama atau Terbaru
 		$versionData = $this->fungsi->cekUrl();
-		
 		$data['data'] = $this->news_m->getDetail($versionData['id'])[0];
 		// $data['footer_script'] = "footer/bera	nda";
 		$data['headline'] = $this->news_m->getHeadline();
