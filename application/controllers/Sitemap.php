@@ -46,8 +46,11 @@ class Sitemap extends CI_Controller
 	{
 		$jumlah = str_replace(['-','.xml'],[' ',''],$this->uri->segment("3"));
 		$perload = 150;
+		$start = (($jumlah-1)*$perload);
+		
+		// test($start);
 		$data['daerah'] = $this->data['daerah'];
-		$data['data'] = $this->news_m->getAll($this->data['daerah']['kode'],$jumlah*$perload,$jumlah);
+		$data['data'] = $this->news_m->getAll($this->data['daerah']['kode'],$perload,$start);
 		$this->load->view('sitemap/all_news', $data);
 	}
 	
