@@ -13,7 +13,7 @@
 <meta name="description" content="<?= $data['news_title'] ?>" itemprop="description" />
 
 <link rel="shortcut icon" href="https://batu.jatimtimes.com//assets/img/favicon.png" type="image/x-icon">
-<link rel="canonical" href="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
+
 <meta name="news_keywords" content="<?= str_replace([' ',',,'],[',',','],$data['news_title'])?>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

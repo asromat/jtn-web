@@ -2,6 +2,8 @@
 <link rel="amphtml" href=<?php urlToAmp(current_url())?>>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $data['news_title'] ?> - Jatimtimes</title>
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="id_ID" />
 <meta property="og:title" content="<?= str_replace('"','&quot;',$data['news_title']) ?>" />
 <meta property="og:description" content="Berita terkini tentang <?= $data['news_title'] ?> - Jatimtimes" />
 <meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"/>

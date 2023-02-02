@@ -88,7 +88,7 @@
 
 							<p><strong>LUMAJANG</strong></p>
 
-							<p>Manajer Area: Moch. R. Abdul Fatah</p>
+							<p></p>
 
 							<p><strong>MALANG</strong></p>
 
@@ -108,7 +108,7 @@
 
 							<p>Jurnalis :Satria Romadhoni</p>
 
-							<p>Marketing :Eko prasetyo</p>
+							<p></p>
 
 							<p><strong>SURABAYA</strong></p>
 
@@ -120,7 +120,7 @@
 
 							<p><strong>TRENGGALEK</strong></p>
 
-							<p>Manajer Area:Ganez Radisa Yuniansyah</p>
+							<p>Manajer Area:</p>
 
 							<p><strong>TULUNGAGUNG</strong></p>
 
@@ -140,13 +140,13 @@
 
 							<p><strong>MagetanTIMES</strong></p>
 
-							<p>Manajer Area: Heri Widodo</p>
+							<p>Manajer Area:</p>
 
-							<p>Wartawan:Chrissie,Danang Kurniawan</p>
+							<p>Wartawan:</p>
 
-							<p>Marketing:Edi Hartoyo</p>
+							<p>Marketing:</p>
 
-							<p>Medsos dan Administrasi:Saniatun Khasani</p>
+							<p>Medsos dan Administrasi:</p>
 
 							<p><strong>PamekasanTIMES</strong></p>
 

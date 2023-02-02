@@ -6,6 +6,10 @@
 
     .post-body p {
         font-size: 18px;
+        line-height: 29px;
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    color: #424242;
     }
 </style>
 
@@ -167,6 +171,8 @@
                         <?php } ?>
                     </div>
                     <!-- * Slider Headline -->
+<h1 class="title">Berita Lainnya</h1>
+
 
 
                     <!-- Berita Terkait -->
