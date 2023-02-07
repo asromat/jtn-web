@@ -22,9 +22,13 @@ class Fungsi
         ]);
     }
 
-    function imageThumbnail($img, $ukuran)
+    function imageThumbnail($img, $ukuran = null)
     {
-        $query = str_replace(['https://','.md', '.th', '.jpg', '.png'], ['https://i1.wp.com/','', '', '.' . $ukuran . '.jpg?quality=50', '.' . $ukuran . '.png?quality=50'], $img);
+        if (isset($ukuran)) { 
+            $query = str_replace(['https://','.md', '.th', '.jpg', '.png'], ['https://i1.wp.com/','', '', '.' . $ukuran . '.jpg?quality=50', '.' . $ukuran . '.png?quality=50'], $img);
+        } else {
+            $query = str_replace(['https://','.jpg', '.png'], ['https://i1.wp.com/', '.' . $ukuran . 'jpg?quality=50', '.' . $ukuran . 'png?quality=50'], $img);
+        }
         return $query;
     }
     

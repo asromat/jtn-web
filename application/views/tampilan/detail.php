@@ -101,7 +101,7 @@
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
-                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: auto; height:auto">
+                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new']) ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: auto; height:auto">
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>
