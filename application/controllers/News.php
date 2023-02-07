@@ -15,6 +15,9 @@ class News extends CI_Controller
 	// Beranda
 	public function index()
 	{
+		// Test Ambil Infografis
+		$this->load->model("infografis_m");
+		
 		$data['daerah'] = $this->data['daerah'];
 		// test($this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start")));
 		$data['headline'] = $this->news_m->getHeadline();
@@ -23,6 +26,8 @@ class News extends CI_Controller
 		$data['olahraga'] = $this->news_m->getCategory("olahraga");
 		$data['pemerintahan'] = $this->news_m->getCategory("pemerintahan");
 		$data['gaya'] = $this->news_m->getCategory("Gaya Hidup");
+		$data['infografis'] = $this->infografis_m->getAll();
+		
 		$data['footer_script'] = "footer/beranda";
 		$this->template->load('template/main', 'tampilan/beranda', $data);
 	}

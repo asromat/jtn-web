@@ -126,7 +126,7 @@
             </div>
             <!-- * Colom ke 2 -->
         </div>
-        <!-- <?php $this->load->view("tampilan/component/infografis")?> -->
+        <?php $this->load->view("tampilan/component/infografis")?>
         <div class="row" style="margin-top: -20;">
             <div class="adbox adbox-responsive mt-4">
                     <!-- Iklan <?= $daerah['site_title']?> -->
