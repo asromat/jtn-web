@@ -32,7 +32,7 @@
 
 							<p><strong>Pemimpin Redaksi/Penanggungjawab</strong></p>
 
-							<p>Yunan Helmy</p>
+							<p>Heryanto</p>
 
 							<p><strong>Wakil Pemimpin Redaksi</strong></p>
 
@@ -88,7 +88,7 @@
 
 							<p><strong>LUMAJANG</strong></p>
 
-							<p></p>
+							<p>Manajer Area: </p>
 
 							<p><strong>MALANG</strong></p>
 
@@ -104,11 +104,11 @@
 
 							<p><strong>NGAWI</strong></p>
 
-							<p>Manajer Area: Heri Sumaryanto</p>
+							<p>Manajer Area:</p>
 
-							<p>Jurnalis :Satria Romadhoni</p>
+							<p>Jurnalis :</p>
 
-							<p></p>
+							<p>Marketing :</p>
 
 							<p><strong>SURABAYA</strong></p>
 
@@ -140,13 +140,13 @@
 
 							<p><strong>MagetanTIMES</strong></p>
 
-							<p>Manajer Area:</p>
+							<p>Manajer Area: Heri Widodo</p>
 
-							<p>Wartawan:</p>
+							<p>Wartawan:Chrissie,Danang Kurniawan</p>
 
-							<p>Marketing:</p>
+							<p>Marketing:Edi Hartoyo</p>
 
-							<p>Medsos dan Administrasi:</p>
+							<p>Medsos dan Administrasi:Saniatun Khasani</p>
 
 							<p><strong>PamekasanTIMES</strong></p>
 
@@ -173,8 +173,6 @@
 							<h2><strong>DEPARTMENT</strong></h2>
 
 							<p><strong>IT Programmer &amp; Design</strong></p>
-
-							<p>Aditya Fachril</p>
 
 							<p>Fitrah Izul Falaq</p>
 

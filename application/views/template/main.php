@@ -28,7 +28,7 @@
     <noscript>
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     </noscript>
-    <link rel="manifest" href="__manifest.json" />
+    <!--<link rel="manifest" href="__manifest.json" /> -->
     <!-- Custom CSS -->
     <!-- Share Button -->
     <style>
@@ -165,7 +165,7 @@
             <a href="<?= base_url() ?>"><img src="<?= $daerah['logo'] ?>" alt="Jatim Times Network Logo" class="image" height="50px" /></a>
         </div>
         <div class="right">
-            <font size="1" class="float-right"><?= date("d/m/Y") ?></font>
+            
             <a href="javascript:;" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
@@ -454,6 +454,36 @@
     <!-- Base Js File -->
     <script src="<?= base_url() ?>/assets/js/base.js"></script>
     <?php isset($footer_script) ? $this->load->view("script/" . $footer_script) : '' ?>
+    
+ <style>  .stickydate {
+  position: sticky;
+ bottom:0;
+  text-align:center;
+  color: black;
+    --x: 50%;
+	--y: 50%;
+align-items: center;
+	justify-content: center;
+	appearance: none;
+	padding: 2px 2px;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	border-radius: 5px;
+	
+	// The magic
+	border: 2px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+}
+
+</style>
+
+<button class="stickydate"><?php
+// Set the new timezone
+date_default_timezone_set('Asia/Jakarta');
+$date = date('r');
+echo $date;
+?></button>
 </body>
 
 </html>

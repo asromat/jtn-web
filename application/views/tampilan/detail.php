@@ -73,14 +73,14 @@
 
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" style="color:#000;">
                 <nav aria-label="breadcrumb" class="mt-3">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="<?= base_url() ?>">
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Baca</li>
-                        <li class="breadcrumb-item active" aria-current="page"><?= $kategori ?></li>
+                        <li class="active" aria-current="page">/Baca</li>
+                        <li class="active" aria-current="page">/<?= $kategori ?></li>
                     </ol>
                 </nav>
             </div>
@@ -109,14 +109,14 @@
                     <div class="post-body">
                         <?= $data['news_content'] ?>
                     </div>
-                    <div class="adbox adbox-responsive mt-4">
+                    <!--<div class="adbox adbox-responsive mt-4">-->
                         <!-- Iklan <?= $daerah['site_title'] ?> -->
-                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>
-                    </div>
-                    <div class="adbox adbox-responsive mt-4">
+                    <!--    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>-->
+                    <!--</div>-->
+                    <!--<div class="adbox adbox-responsive mt-4">-->
                         <!-- Iklan <?= $daerah['site_title'] ?> -->
-                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads7'] ?>"></script>
-                    </div>
+                    <!--    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads7'] ?>"></script>-->
+                    <!--</div>-->
                     <hr>
                     <!-- <h3>Topik</h3> -->
                     <!-- <p>
@@ -151,27 +151,8 @@
                 <!-- ! Iklan Bawah Berita -->
 
                 <div class="col-12 col-lg-8 pl-2 pr-2 mt-2">
-                    <!-- Slider Headline -->
-                    <div class="carousel carousel-full owl-carousel owl-theme">
-                        <?php foreach ($headline as $key => $data) {; ?>
-                            <div class="item">
-                                <div class="card position-relative p-1">
-                                    <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" class="card-img-top img-fluid" alt="$data['news_title']" style="max-height: 1200px; width:100%">
-                                    <div class="card-body p-1">
-                                        <!-- <span class="text-warning fn80 text-uppercase font-weight-bold">Berita</span> -->
-                                        <h2 class="mb-0" style="font-size: 18px;"><?= $data['news_title'] ?></h2>
-                                        <span class="float-left fn80"><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                        <!-- <span class="float-right fn80">
-                                    <ion-icon name="eye-outline"></ion-icon></i> 5.70rb
-                                </span> -->
-                                    </div>
-                                    <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>" class="stretched-link"></a>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <!-- * Slider Headline -->
-<h1 class="title">Berita Lainnya</h1>
+                    
+<!--<h1 class="title">Berita Lainnya</h1>-->
 
 
 
@@ -277,9 +258,9 @@
                 </div>
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
-                <div class="adbox adbox-responsive mt-4">
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>
-                </div>
+                <!--<div class="adbox adbox-responsive mt-4">-->
+                <!--    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>-->
+                <!--</div>-->
                 <!-- * Iklan -->
             </div>
         </div>

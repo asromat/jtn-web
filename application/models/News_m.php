@@ -15,10 +15,17 @@ class News_m extends CI_Model
         //     'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         // ]);
         // Real
-        $this->_client = new Client([
+        if ($_SERVER['HTTP_HOST'] == "malangtimes.com" and $this->uri->segment("1") == "baca" and $this->uri->segment("2") < 100000) {
+            $this->_client = new Client([
+            'base_uri' => 'https://mlgapi.jtnweb.my.id',
+            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+            ]);
+        } else {
+            $this->_client = new Client([
             'base_uri' => 'https://api.jtnweb.my.id',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
-        ]);
+            ]);
+        }
     }
     
     public function getAll($location= null,$limit = null,$start = null)
