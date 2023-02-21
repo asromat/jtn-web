@@ -115,7 +115,7 @@ class News_m extends CI_Model
                 'id' => $id,
             ]
         ]);
-
+        
         $response = json_decode($res->getBody()->getContents(), true);
         return $response;
     }
