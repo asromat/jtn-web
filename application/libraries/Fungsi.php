@@ -17,7 +17,7 @@ class Fungsi
         // ]);
         // Real
         $this->_client = new Client([
-            'base_uri' => 'https://api.jtnweb.my.id',
+            'base_uri' => 'http://jtn.dnssec.icu',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }

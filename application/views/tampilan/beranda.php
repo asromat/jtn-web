@@ -191,6 +191,12 @@
                     <!-- Iklan <?= $daerah['site_title']?> -->
                     <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
                 </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <img src="https://risetcdn.jatimtimes.com/images/2023/02/14/WhatsApp-Image-2023-02-14-at-07.16.355e79a63b6535d0a1.jpg" alt="WhatsApp-Image-2023-02-14-at-07.16.355e79a63b6535d0a1.jpg" border="0">
+                </div>
+                <div class="adbox adbox-responsive mt-4">
+                    <img src="https://risetcdn.jatimtimes.com/images/2023/02/14/WhatsApp-Image-2023-02-14-at-07.16.34580daa1872630bde.jpg" alt="WhatsApp-Image-2023-02-14-at-07.16.34580daa1872630bde.jpg" border="0">
+                </div>
                 
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->

@@ -141,12 +141,16 @@
 							<p><strong>MagetanTIMES</strong></p>
 
 							<p>Manajer Area: Heri Widodo</p>
-
+							
 							<p>Wartawan:Chrissie,Danang Kurniawan</p>
 
 							<p>Marketing:Edi Hartoyo</p>
 
 							<p>Medsos dan Administrasi:Saniatun Khasani</p>
+							
+							<p><strong>MojokertoTIMES</strong></p>
+
+							<p>Manajer Area: Abdullah musawa</p>
 
 							<p><strong>PamekasanTIMES</strong></p>
 

@@ -12,7 +12,7 @@
     color: #424242;
     }
 </style>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- App Capsule -->
 <div id="appCapsule">
     <!-- Main Navbar -->
@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="p-2 bg-white rounded shadow-sm">
-                    <a href="<?= base_url() ?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1"><?= $kategori ?></span></a>
+                    <a href="<?= base_url() ?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1 kater" id="kater"><?= $kategori ?></span></a>
                     <!-- <a href="#" class="d-block text-primary fn-poppins font-italic mt-1">OTT KPK di MA</a> -->
                     <h1><?= $data['news_title'] ?></h1>
                     <div>
@@ -145,7 +145,15 @@
                     </div>
                 </div>
                 <!-- Iklan Bawah Berita -->
-                <!--<div class="adbox adbox-responsive mt-4">
+                <script>
+	$(function() {
+		$('.samEmbed').each(function() {
+			$(this).attr('src', $(this).data('src')).removeAttr('data-src');
+		});
+	});
+</script>
+            
+               <!--<div class="adbox adbox-responsive mt-4">
                     <img src="https://risetcdn.jatimtimes.com/images/2022/10/11/WhatsApp-Image-2022-10-10-at-20.32.10e16df517bd10d9be.jpg" alt="image">
                 </div> -->
                 <!-- ! Iklan Bawah Berita -->

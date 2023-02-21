@@ -12,7 +12,7 @@ class Settings
         $this->ci = &get_instance();
         // Environment
         $this->_client = new Client([
-            'base_uri' => 'http://jtn.dnssec.icu/',
+            'base_uri' => 'http://jtn.dnssec.icu',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
         // Real
