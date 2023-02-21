@@ -10,15 +10,15 @@ class News_m extends CI_Model
     public function __construct()
     {
         // Environment
-        $this->_client = new Client([
-            'base_uri' => 'http://fix-jtnapi.me/',
-            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
-        ]);
-        // Real
         // $this->_client = new Client([
-        //     'base_uri' => 'https://api.jtnweb.my.id',
+        //     'base_uri' => 'http://fix-jtnapi.me/',
         //     'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         // ]);
+        // Real
+        $this->_client = new Client([
+            'base_uri' => 'http://api.jtnweb.my.id',
+            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+        ]);
     }
     
     public function getAll($location= null,$limit = null,$start = null)

@@ -59,3 +59,13 @@
     });
 </script>
 <!-- ! On Button Loadmore -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL9N0YP0G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL9N0YP0G4');
+</script>

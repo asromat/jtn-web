@@ -4,7 +4,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0E86D4">
 
-<title> <?= $daerah['site_title']?></title>
+<title><?= $daerah['site_title']?></title>
 <meta name="description" content="<?= $daerah['site_title']?>">
 <meta name="keywords" content="<?= $daerah['site_title']?>" />
 <meta name="image" content="<?= $daerah['logo']?>">
@@ -22,3 +22,23 @@
 <meta property="twitter:title" content="<?= $daerah['site_title']?>">
 <meta property="twitter:description" content="<?= $daerah['site_title']?>">
 <meta property="twitter:image" content="<?= $daerah['logo']?>">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL9N0YP0G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL9N0YP0G4');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL9N0YP0G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL9N0YP0G4');
+</script>
