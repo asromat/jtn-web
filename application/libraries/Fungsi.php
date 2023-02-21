@@ -136,4 +136,11 @@ class Fungsi
         if (!$full) $string = array_slice($string, 0, 1);
         return $string ? implode(', ', $string) . ' lalu' : 'just now';
     }
+
+    function showTag($tag)
+    {
+        $data = str_replace([","," "],[':',''],$tag);
+        $final = explode(":",$data);
+        return $final;
+    }
 }

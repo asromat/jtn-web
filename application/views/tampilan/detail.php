@@ -118,11 +118,13 @@
                     <!--    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads7'] ?>"></script>-->
                     <!--</div>-->
                     <hr>
-                    <!-- <h3>Topik</h3> -->
-                    <!-- <p>
-                        <span class="badge badge-primary">Tag 1</span> <span class="badge badge-primary">Tag
-                            2</span> <span class="badge badge-primary">Tag 3</span>
-                    </p> -->
+                    <h3>Topik</h3>
+                    <p>
+                        <a href="<?= base_url("kanal")?>/<?= $kategori ?>"><span class="badge badge-primary"><?= $kategori?></span></a>
+                        <?php foreach ($this->fungsi->showTag($data['news_tags']) as $tag) {; ?>
+                            <a href="<?= base_url("tag")?>/<?= $tag ?>"><span class="badge badge-primary"><?= $tag ?></span></a>
+                        <?php } ?>
+                    </p>
                     <div class="row">
                         <!-- <div class="col-2">
                             <img loading="lazy" src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">

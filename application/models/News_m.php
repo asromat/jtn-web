@@ -22,7 +22,7 @@ class News_m extends CI_Model
             ]);
         } else {
             $this->_client = new Client([
-            'base_uri' => 'http://jtn.dnssec.icu',
+            'base_uri' => 'http://api.jtnweb.my.id',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
             ]);
         }
