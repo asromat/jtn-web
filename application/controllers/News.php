@@ -103,11 +103,11 @@ class News extends CI_Controller
 						<div>
 							<header class="text-primary fn80 text-uppercase font-weight-bold">
 							</header>
+							<span class="badge badge-warning bg-tia50000 text-uppercase mb-1 kater" id="kater">'.$row['news_subtitle'].'</span>
 							<h3>'.$row['news_title'].'</h3>
 							<div class="text-muted d-block fn60">
 								<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
 							</div>
-
 						</div>
 					</div>
 				</div>

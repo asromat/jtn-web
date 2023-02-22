@@ -23,6 +23,7 @@ class News_m extends CI_Model
         } else {
             $this->_client = new Client([
             'base_uri' => 'http://api.jtnweb.my.id',
+            // 'base_uri' => 'http://fix-jtnapi.me',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
             ]);
         }

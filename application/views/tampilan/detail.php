@@ -89,6 +89,7 @@
             <div class="col-12 col-lg-8">
                 <div class="p-2 bg-white rounded shadow-sm">
                     <a href="<?= base_url() ?>/kanal/<?= $kategori ?>"><span class="badge badge-primary bg-tia50000 text-uppercase mb-1 kater" id="kater"><?= $kategori ?></span></a>
+                    <span class="badge badge-warning bg-tia50000 text-uppercase mb-1 kater" id="kater"><?= $data['news_subtitle'] ?></span>
                     <!-- <a href="#" class="d-block text-primary fn-poppins font-italic mt-1">OTT KPK di MA</a> -->
                     <h1><?= $data['news_title'] ?></h1>
                     <div>
