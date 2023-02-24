@@ -139,7 +139,7 @@ class Fungsi
 
     function showTag($tag)
     {
-        $data = str_replace([","," "],[':',''],$tag);
+        $data = str_replace([",",", "],[':',':'],$tag);
         $final = explode(":",$data);
         return $final;
     }

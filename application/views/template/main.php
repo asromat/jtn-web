@@ -453,37 +453,11 @@
     <script src="<?= base_url() ?>/assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
     <!-- Base Js File -->
     <script src="<?= base_url() ?>/assets/js/base.js"></script>
+    <!-- Script Sticky Date -->
+    <script>function display_ct7(){var t=new Date;day=(1==(day=t.getDay()).length,["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"][t.getDay()]),hours=1==(hours=t.getHours()).toString().length?0+hours.toString():hours;var e=t.getMinutes().toString();e=1==e.length?0+e:e;var n=t.getSeconds().toString();n=1==n.length?0+n:n;var g=(t.getMonth()+1).toString();g=(1==g.length,["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"][t.getMonth()]);var a=t.getDate().toString(),i=day+", "+(a=1==a.length?0+a:a)+" "+g+" "+t.getFullYear();i=i+" - "+hours+":"+e+":"+n+" WIB",document.getElementById("ct7").innerHTML=i,display_c7()}function display_c7(){mytime=setTimeout("display_ct7()",1e3)}display_c7();</script>
     <?php isset($footer_script) ? $this->load->view("script/" . $footer_script) : '' ?>
-    
- <style>  .stickydate {
-  position: sticky;
- bottom:0;
-  text-align:center;
-  color: black;
-    --x: 50%;
-	--y: 50%;
-align-items: center;
-	justify-content: center;
-	appearance: none;
-	padding: 2px 2px;
-	color: white;
-	cursor: pointer;
-	outline: none;
-	border-radius: 5px;
-	
-	// The magic
-	border: 2px solid transparent;
-	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
-}
 
-</style>
-
-<button class="stickydate"><?php
-// Set the new timezone
-date_default_timezone_set('Asia/Jakarta');
-$date = date('r');
-echo $date;
-?></button>
+    <span style="position:sticky;bottom:0;text-align:center;color:#000;--x:50%;--y:50%;align-items:center;justify-content:center;appearance:none;padding:2px 2px;color:#fff;cursor:pointer;outline:0;border-radius:5px;background:linear-gradient(#000,#000) padding-box,radial-gradient(farthest-corner at var(--x) var(--y),#00c9a7,#845ec2) border-box" id="ct7"></span>
 </body>
 
 </html>
