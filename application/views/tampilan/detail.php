@@ -139,6 +139,17 @@
                             Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com dengan klik <strong><a href="https://news.google.com/publications/CAAqBwgKMPO4nQswhMO1Aw?hl=id&gl=ID&ceid=ID%3Aid" target="_blank">Langganan Google News Jatimtimes</a></strong> atau bisa menginstall aplikasi <?= $daerah['site_title'] ?> News melalui Tombol Berikut :
                             </p>
                             <button id="installApp" class="btn btn-info btn-block"><ion-icon name="logo-android"></ion-icon>Install Aplikasi <?= $daerah['site_title'] ?> News</button>
+                            <button onclick="checkIfInstalled()">Check if PWA is installed</button>
+
+<script>
+function checkIfInstalled() {
+  if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+    alert('PWA is installed on this device');
+  } else {
+    alert('PWA is not installed on this device');
+  }
+}
+</script>
                         </div>
                     </div>
                     <hr>
