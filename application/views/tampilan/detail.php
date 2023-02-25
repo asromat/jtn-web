@@ -102,7 +102,7 @@
                 </div>
                 <div class="bg-white mt-2">
                     <figure class="figure shadow-sm" style="width: 100%; height:auto;" align="center">
-                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'],"md") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: auto; height:auto">
+                        <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'],"md") ?>" class="rounded-top img-fluid" alt="<?= $data['news_caption'] ?>" style="width: auto; height:auto" onerror="this.onerror=null;this.src='https://cdnstatic.jatimtimes.com/noimg.webp';">
                         <figcaption class="figure-caption bg-times text-light text-center p-1 rounded-bottom"><?= $data['news_caption'] ?></figcaption>
                     </figure>
                 </div>
@@ -217,7 +217,7 @@
                                     <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
                                         <div class="item">
                                             <div class="imageWrapper">
-                                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                                <img loading="lazy" src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100" onerror="this.onerror=null;this.src='https://cdnstatic.jatimtimes.com/noimg.webp';">
                                             </div>
                                             <div class="in">
                                                 <div>

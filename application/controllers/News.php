@@ -89,6 +89,7 @@ class News extends CI_Controller
 	// Load More Beranda
 	public function loadMore()
 	{
+		$imgDefault = "'https://cdnstatic.jatimtimes.com/noimg.webp'";
 		$output = '';
 		$data = $this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start"));
 		if ($data > 0) {
@@ -97,7 +98,7 @@ class News extends CI_Controller
 				<a href="https://'.$_SERVER['HTTP_HOST'].'/baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
 				<div class="item">
 					<div class="imageWrapper">
-						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
+						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100" onerror="this.onerror=null;this.src='.$imgDefault.';">
 					</div>
 					<div class="in">
 						<div>
@@ -121,6 +122,7 @@ class News extends CI_Controller
 	// Load more category, tag, dll
 	public function loadMoreCat()
 	{
+		$imgDefault = "'https://cdnstatic.jatimtimes.com/noimg.webp'";
 		$output = '';
 		$data = $this->news_m->getCategory($this->input->post("kanal"),$this->input->post("limit"),$this->input->post("start"));
 		if ($data > 0) {
@@ -129,7 +131,7 @@ class News extends CI_Controller
 				<a href="'.base_url().'baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
 				<div class="item">
 					<div class="imageWrapper">
-						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
+						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100" onerror="this.onerror=null;this.src='.$imgDefault.';">
 					</div>
 					<div class="in">
 						<div>
@@ -152,6 +154,7 @@ class News extends CI_Controller
 	// Load more tag, dll
 	public function loadMoreTag()
 	{
+		$imgDefault = "'https://cdnstatic.jatimtimes.com/noimg.webp'";
 		$output = '';
 		$keyword = $this->input->post("keyword");
 		$data = $this->news_m->getTag($keyword,$this->input->post("limit"),$this->input->post("start"));
@@ -161,7 +164,7 @@ class News extends CI_Controller
 				<a href="'.base_url().'baca/'.$row['news_id'].'/'.$this->fungsi->timeToStr("Ymd",$row['news_datepub']).'/'.$this->fungsi->timeToStr("his",$row['news_datepub']).'/'. $this->fungsi->convertToSlug($row['news_title']).'"
 				<div class="item">
 					<div class="imageWrapper">
-						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100">
+						<img src="'.$this->fungsi->imageThumbnail($row['news_image_new'], "th").'" alt="image" class="imaged w100" onerror="this.onerror=null;this.src='.$imgDefault.';">
 					</div>
 					<div class="in">
 						<div>
