@@ -466,8 +466,8 @@
     <?php isset($footer_script) ? $this->load->view("script/" . $footer_script) : '' ?>
 
     <span style="position:sticky;bottom:0;text-align:center;color:#000;--x:50%;--y:50%;align-items:center;justify-content:center;appearance:none;padding:2px 2px;color:#fff;cursor:pointer;outline:0;border-radius:5px;background:linear-gradient(#000,#000) padding-box,radial-gradient(farthest-corner at var(--x) var(--y),#00c9a7,#845ec2) border-box" id="ct7"></span>
-        <!-- Script for Service Worker -->
-        <script>
+    <!-- Script for Service Worker -->
+    <script>
       window.addEventListener('load', () => {
       registerSW();
       });
