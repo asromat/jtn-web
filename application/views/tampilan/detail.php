@@ -135,9 +135,9 @@
                             <img class="text-center" src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" width="150px" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
                             <h3>UPDATE BERITA JATIM TIMES NETWORK</h3>
                             <p>
-                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com melalui Google News dengan klik Langganan Google News Jatimtimes atau bisa menginstall aplikasi JTN Newtwork melalui Tombol Berikut
+                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com dengan klik <strong><a href="https://news.google.com/publications/CAAqBwgKMPO4nQswhMO1Aw?hl=id&gl=ID&ceid=ID%3Aid" target="_blank">Langganan Google News Jatimtimes</a></strong> atau bisa menginstall aplikasi Jatim Times News melalui Tombol Berikut :
                             </p>
-                            <button id="installApp" class="btn btn-warning btn-block">Install JTN News Apps</button>
+                            <button id="installApp" class="btn btn-info btn-block"><ion-icon name="logo-android"></ion-icon>Install Aplikasi Jatim Times News Apps</button>
                         </div>
                     </div>
                     <hr>
