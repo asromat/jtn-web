@@ -496,13 +496,15 @@
 
       const installApp = document.getElementById('installApp');
       installApp.addEventListener('click', async () => {
+          document.querySelector('#installApp').style.display = 'none';
+          document.querySelector('#ketInstallApp').style.display = 'block';
           if (deferredPrompt !== null) {
               deferredPrompt.prompt();
               const { outcome } = await deferredPrompt.userChoice;
               if (outcome === 'accepted') {
                   deferredPrompt = null;
-              }
-          }
+                }
+            }
       });
     </script>
     <!-- Install -->
