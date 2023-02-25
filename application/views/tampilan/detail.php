@@ -126,13 +126,18 @@
                             <a href="<?= base_url("tag")?>/<?= $tag ?>"><span class="badge badge-primary"><?= $tag ?></span></a>
                         <?php } ?>
                     </p>
+                    <hr>
                     <div class="row">
                         <!-- <div class="col-2">
                             <img loading="lazy" src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">
                         </div> -->
                         <div class="col-10">
-                            <h3>JOIN JATIM TIMES NETWORK</h3>
-                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com. Mari bergabung di Grup Telegram , caranya klik link Telegram JatimTIMES, kemudian join. Anda harus install aplikasi Telegram terlebih dulu di ponsel anda.
+                            <img class="text-center" src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" width="150px" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+                            <h3>UPDATE BERITA JATIM TIMES NETWORK</h3>
+                            <p>
+                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com melalui Google News dengan klik Langganan Google News Jatimtimes atau bisa menginstall aplikasi JTN Newtwork melalui Tombol Berikut
+                            </p>
+                            <button id="installApp" class="btn btn-warning btn-block">Install JTN News Apps</button>
                         </div>
                     </div>
                     <hr>
