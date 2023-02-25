@@ -149,7 +149,7 @@
     <!-- PWA Script -->
     <meta name="apple-mobile-web-app-status-bar" content="#113491">
     <meta name="theme-color" content="#113491">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="<?=base_url()?>/manifest.json">
     <!-- !End PWA Script -->
 </head>
 
