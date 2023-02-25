@@ -145,10 +145,18 @@
         }
     </style>
     <!-- ! Custom CSS -->
+
+    <!-- PWA Script -->
+    <meta name="apple-mobile-web-app-status-bar" content="#113491">
+    <meta name="theme-color" content="#113491">
+    <link rel="manifest" href="manifest.json">
+    <!-- !End PWA Script -->
 </head>
 
 <body>
-    <!-- loader -->
+<!-- <script>function musictime(){var e=new Audio("https://malangtimes.com/assets/malangtimes.mp3").play();void 0!==e&&e.then(e=>{console.log("Autoplay started")}).catch(e=>{console.log("Autoplay gave some error",e),window.addEventListener("click",function(){document.getElementById("audio").play()},{once:!0})})}document.body.onload=function(){musictime()};var isFirefox="undefined"!=typeof InstallTrigger,isChrome=!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime);function play(){document.getElementById("audio").play()}</script> -->
+
+<!-- loader -->
     <!-- <div id="loader">
         <div class="spinner-border text-primary" role="status"></div>
     </div> -->
@@ -458,6 +466,46 @@
     <?php isset($footer_script) ? $this->load->view("script/" . $footer_script) : '' ?>
 
     <span style="position:sticky;bottom:0;text-align:center;color:#000;--x:50%;--y:50%;align-items:center;justify-content:center;appearance:none;padding:2px 2px;color:#fff;cursor:pointer;outline:0;border-radius:5px;background:linear-gradient(#000,#000) padding-box,radial-gradient(farthest-corner at var(--x) var(--y),#00c9a7,#845ec2) border-box" id="ct7"></span>
+        <!-- Script for Service Worker -->
+        <script>
+      window.addEventListener('load', () => {
+      registerSW();
+      });
+    
+      // Register the Service Worker
+      async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+        await navigator
+            .serviceWorker
+            .register('serviceworker.js');
+        }
+        catch (e) {
+        console.log('SW registration failed');
+        }
+      }
+      }
+    </script>
+    <!-- End PWA -->
+    <!-- Install -->
+    <script>
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+          deferredPrompt = e;
+      });
+
+      const installApp = document.getElementById('installApp');
+      installApp.addEventListener('click', async () => {
+          if (deferredPrompt !== null) {
+              deferredPrompt.prompt();
+              const { outcome } = await deferredPrompt.userChoice;
+              if (outcome === 'accepted') {
+                  deferredPrompt = null;
+              }
+          }
+      });
+    </script>
+    <!-- Install -->
 </body>
 
 </html>
