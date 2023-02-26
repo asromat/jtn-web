@@ -8,11 +8,11 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb" class="mt-3">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="<?=base_url()?>">
+                        <li class="breadcrumb-item"><a href="<?= base_url() ?>">
                                 <ion-icon name="home-outline"></ion-icon>
                             </a></li>
-                        <li class="breadcrumb-item active text-uppercase" aria-current="page"><a href="<?=base_url($this->uri->segment("1"))?>"><?= $this->uri->segment("1")?></a></li>
-                        <li class="breadcrumb-item active text-uppercase" aria-current="page"><?= urldecode($kanal)?></li>
+                        <li class="breadcrumb-item active text-uppercase" aria-current="page"><a href="<?= base_url($this->uri->segment("1")) ?>"><?= $this->uri->segment("1") ?></a></li>
+                        <li class="breadcrumb-item active text-uppercase" aria-current="page"><?= urldecode($kanal) ?></li>
                     </ol>
                 </nav>
             </div>
@@ -21,8 +21,8 @@
             <div class="col-12 col-lg-8">
                 <!-- Hasil Pencarian -->
                 <div class="header-large-title">
-                    <h1 class="title text-uppercase ">#<?= urldecode($kanal)?></h1>
-                    <h4 class="subtitle text-uppercase">Berita Seputar <?= urldecode($kanal)?></h4>
+                    <h1 class="title text-uppercase ">#<?= urldecode($kanal) ?></h1>
+                    <h4 class="subtitle text-uppercase">Berita Seputar <?= urldecode($kanal) ?></h4>
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
@@ -40,40 +40,26 @@
                 <!-- ! Hasil Pencarian -->
             </div>
             <div class="col-12 col-lg-4">
-                <!-- Berita Populer -->
+                <!-- Headline -->
                 <div class="card">
-                <div class="header-large-title">
-                        <h1 class="title">#Headline Berita</h1>
-                        <h4 class="subtitle">Wajib Kamu Baca</h4>
-                    </div>
-                    <div class="card-body text-left">
-                        <ul class="listview image-listview media">
-                            <li>
-                                <?php $no=1; foreach ($headline as $key => $data) {; ?>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;"><?= $no++?></h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3><?=$data['news_title']?></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                                <?php } ?>
-                            </li>
-                        </ul>
+                    <div>
+                        <?php $this->load->view("component/headlineText")?>
                     </div>
                 </div>
-                <!-- * Berita Populer -->
+                <!-- * Headline -->
+                <!-- FOkus -->
+                <div class="card mt-2">
+                    <div>
+                        <?php $this->load->view("component/fokus")?>
+                    </div>
+                </div>
+                <!-- * FOkus -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads1'] ?>"></script>
                 </div>
                 <div class="adbox adbox-responsive mt-4">
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads2'] ?>"></script>
                 </div>
                 <!-- ! Iklan -->
             </div>

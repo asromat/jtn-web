@@ -32,7 +32,7 @@ class Page extends CI_Controller {
 		} elseif ($page == "privacy"){
 			$halaman = "privacy";
 		} else {
-			redirect();
+			redirect("404");
 		}
 
 		$data['menu'] = "Redaksi";

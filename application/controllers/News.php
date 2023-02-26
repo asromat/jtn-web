@@ -15,19 +15,21 @@ class News extends CI_Controller
 	// Beranda
 	public function index()
 	{
-		// Test Ambil Infografis
 		$this->load->model("infografis_m");
-		
 		$data['daerah'] = $this->data['daerah'];
-		// test($this->news_m->getAll($this->data['daerah']['kode'],$this->input->post("limit"),$this->input->post("start")));
+		// Konfigurasi Iklan Per Daerah menggunkaan sistem Tenants
+		$data['iklan'] = include(FCPATH . 'tenants/iklan/'.$data['daerah']['kode'].'/config.php');
+		// Data Komponen
 		$data['headline'] = $this->news_m->getHeadline();
+		$data['fokus'] = $this->news_m->getFokus();
 		$data['hukum'] = $this->news_m->getCategory("hukum dan kriminalitas");
 		$data['pendidikan'] = $this->news_m->getCategory("pendidikan");
 		$data['olahraga'] = $this->news_m->getCategory("olahraga");
 		$data['pemerintahan'] = $this->news_m->getCategory("pemerintahan");
 		$data['gaya'] = $this->news_m->getCategory("Gaya Hidup");
+		// Data Infografis
 		$data['infografis'] = $this->infografis_m->getAll();
-		
+		$data['header_script'] = "";
 		$data['footer_script'] = "footer/beranda";
 		$this->template->load('template/main', 'tampilan/beranda', $data);
 	}
@@ -36,9 +38,10 @@ class News extends CI_Controller
 	public function kanal()
 	{
 		$data['daerah'] = $this->data['daerah'];
-		
 		$data['kanal'] = $this->uri->segment("2");
 		$data['headline'] = $this->news_m->getHeadline();
+		$data['fokus'] = $this->news_m->getFokus();
+		// $data['header_script'] = "";
 		$data['footer_script'] = "footer/search";
 		$this->template->load('template/main', 'tampilan/search', $data);
 	}
@@ -50,6 +53,7 @@ class News extends CI_Controller
 		
 		$data['kanal'] = str_replace(["%20","-"],[" "," "],$this->uri->segment("2"));;
 		$data['headline'] = $this->news_m->getHeadline();
+		$data['fokus'] = $this->news_m->getFokus();
 		$data['footer_script'] = "footer/tag";
 		$this->template->load('template/main', 'tampilan/search', $data);
 	}
@@ -64,6 +68,9 @@ class News extends CI_Controller
 		
 		$data['kanal'] = $katakunci;
 		$data['headline'] = $this->news_m->getHeadline();
+		$data['fokus'] = $this->news_m->getFokus();
+		
+		// $data['header_script'] = "";
 		$data['footer_script'] = "footer/tag";
 		$this->template->load('template/main', 'tampilan/search', $data);
 	}
@@ -75,10 +82,8 @@ class News extends CI_Controller
 		//Cek URL Lama atau Terbaru
 		$versionData = $this->fungsi->cekUrl();
 		$data['data'] = $this->news_m->getDetail($versionData['id'])[0];
-		// $data['footer_script'] = "footer/bera	nda";
 		$data['headline'] = $this->news_m->getHeadline();
-		$data['similar'] = $this->news_m->getSimilar("arema",$data['data']['catnews_id']);
-		// test($data['similar']);
+		$data['fokus'] = $this->news_m->getFokus();
 		$data['satukanal'] = $this->news_m->getSameCategory($data['data']['catnews_id']);
 		$data['kategori'] = $this->news_m->getCategoryData("catnews_id",$data['data']['catnews_id'])[0]['catnews_title'];
 		$data['editor'] = $this->fungsi->getProfile("editor",$data['data']['editor_id'])[0]['editor_name'];

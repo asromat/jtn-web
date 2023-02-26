@@ -2,89 +2,92 @@
 <div id="appCapsule">
     <?php $this->view("element/main-nav-bar") ?>
     <!-- Section 1 -->
-    <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.4.1 -->
-<ins data-revive-zoneid="6" data-revive-id="117baf6d729856b93b4ce4545fb3968c"></ins>
-<script async src="//pasangiklan.jatimtimes.com/adserver/www/delivery/asyncjs.php"></script>
-<style>
-.centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    <style>
+        .centerimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
 
-}
-.owl-carousel .owl-item img {
-    display: block;
-    width: auto;
-}
+        }
 
-@media only screen and (min-width: 500px) {
-/* For tablets: */
-.imgthumb{height: 310px; width: auto;}
-}
+        .owl-carousel .owl-item img {
+            display: block;
+            width: auto;
+        }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-.imgthumb{max-height: 400px; width: 100%;}
-}
+        @media only screen and (min-width: 500px) {
 
-.wrapper2 {
-  width: 0px;
-  animation: fullView 0.5s forwards linear;
-}
+            /* For tablets: */
+            .imgthumb {
+                height: 310px;
+                width: auto;
+            }
+        }
 
-.br {
-  border-radius: 8px;  
-}
+        @media only screen and (min-width: 768px) {
 
-.w80 {
-   width: 80%;
-}
+            /* For desktop: */
+            .imgthumb {
+                max-height: 400px;
+                width: 100%;
+            }
+        }
 
-.card-box {
-  border: 2px solid #fff;
-  box-shadow:0px 0px 10px 0 #a9a9a9;
-  padding: 30px 40px;
-  width: 80%;
-  margin: 50px auto;
-}
+        .wrapper2 {
+            width: 0px;
+            animation: fullView 0.5s forwards linear;
+        }
 
-.Pic {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-}
+        .br {
+            border-radius: 8px;
+        }
 
-.comment {
-  height: 10px;
-  background: #777;
-  margin-top: 20px;
-}
+        .w80 {
+            width: 80%;
+        }
 
-.animate {
-   animation : shimmer 2s infinite;
-   background: linear-gradient
-   (to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
-   background-size: 1000px 100%;
-}
+        .card-box {
+            border: 2px solid #fff;
+            box-shadow: 0px 0px 10px 0 #a9a9a9;
+            padding: 30px 40px;
+            width: 80%;
+            margin: 50px auto;
+        }
 
-@keyframes fullView {
-  100% {
-    width: 100%;
-  }
-}
+        .Pic {
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+        }
 
-@keyframes shimmer {
-  0% {
-    background-position: -1000px 0;
-  }
-  100% {
-    background-position: 1000px 0;
-  }
-}
+        .comment {
+            height: 10px;
+            background: #777;
+            margin-top: 20px;
+        }
 
+        .animate {
+            animation: shimmer 2s infinite;
+            background: linear-gradient (to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+            background-size: 1000px 100%;
+        }
 
+        @keyframes fullView {
+            100% {
+                width: 100%;
+            }
+        }
 
-</style>
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+    </style>
 
     <div class="main-page">
         <div class="row">
@@ -104,30 +107,27 @@
                                     <ion-icon name="eye-outline"></ion-icon></i> 5.70rb
                                 </span> -->
                                 </div>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>" class="stretched-link"></a>
+                                <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>" class="stretched-link"></a>
                             </div>
                         </div>
                     <?php } ?>
                 </div>
                 <!-- * Slider Headline -->
-                <div  style="text-align:center;">
-               <div class="adbox adbox-responsive mt-4" style="max-width:336px;">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads1']?>"></script>
+                <div style="text-align:center;">
+                    <div class="adbox adbox-responsive mt-4" style="max-width:336px;">
+                        <!-- Iklan <?= $daerah['site_title'] ?> -->
+                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads1'] ?>"></script>
                     </div>
                 </div>
                 <!-- Berita Terbaru -->
                 <div class="header-large-title mt-5">
-                    
                     <h1 class="title">Berita Terbaru</h1>
                     <h4 class="subtitle">Update Bacaanmu Hari Ini</h4>
-                    
                 </div>
                 <div class="card mt-1">
                     <ul class="listview image-listview media">
                         <!-- Load Berita Terbaru -->
                         <li id="load_data">
-
                         </li>
                         <!-- ! Load Berita Terbaru -->
                         <div id="load_data_message"></div>
@@ -143,23 +143,7 @@
             <div class="col-12 col-lg-4 mt-2">
                 <!-- Berita Populer -->
                 <div class="card">
-                    <!--<div class="carousel-full owl-carousel owl-theme owl-loaded owl-drag">-->
-                    <!--    <div class="owl-stage-outer">-->
-                    <!--        <div class="owl-stage" style="transform: translate3d(-1033px, 0px, 0px); transition: all 0s ease 0s; width: 3161px; padding-left: 30px; padding-right: 30px;">-->
-                    <!--            <?php for ($x = 1; $x <= 15; $x++) {; ?>-->
-                    <!--                <?php if ($daerah['ads'.$x] != null) { ?>-->
-                    <!--                <div class="owl-item" style="width: 328.533px; margin-right: 16px;">-->
-                    <!--                    <div class="item imaged w-100">-->
-                    <!--                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads'.$x] ?>"></script>-->
-                    <!--                    </div>-->
-                    <!--                </div>-->
-                    <!--                <?php } ?>-->
-                    <!--            <?php } ?>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<hr>-->
-                    <?php $this->load->view("tampilan/component/iklangeser")?><br><br>
+                    <?php $this->load->view("tampilan/component/iklangeser") ?><br><br>
                     <div class="header-large-title">
                         <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
@@ -167,19 +151,20 @@
                     <div class="card-body text-left">
                         <ul class="listview image-listview media">
                             <li>
-                                <?php $no=1; foreach ($headline as $key => $data) {; ?>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <h1 class="top-text-align" style="font-size: 20px;"><?= $no++?></h1>
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <h3><?=$data['news_title']?></h3>
+                                <?php $no = 1;
+                                foreach ($headline as $key => $data) {; ?>
+                                    <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+                                        <div class="item">
+                                            <div class="imageWrapper">
+                                                <h1 class="top-text-align" style="font-size: 20px;"><?= $no++ ?></h1>
+                                            </div>
+                                            <div class="in">
+                                                <div>
+                                                    <h3><?= $data['news_title'] ?></h3>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                </a>
+                                    </a>
                                 <?php } ?>
                             </li>
                         </ul>
@@ -188,150 +173,45 @@
                 <!-- * Berita Populer -->
                 <!-- Iklan -->
                 <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads2']?>"></script>
+                    <!-- Iklan <?= $daerah['site_title'] ?> -->
+                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads2'] ?>"></script>
                 </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2023/02/14/WhatsApp-Image-2023-02-14-at-07.16.355e79a63b6535d0a1.jpg" alt="WhatsApp-Image-2023-02-14-at-07.16.355e79a63b6535d0a1.jpg" border="0">
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <img src="https://risetcdn.jatimtimes.com/images/2023/02/14/WhatsApp-Image-2023-02-14-at-07.16.34580daa1872630bde.jpg" alt="WhatsApp-Image-2023-02-14-at-07.16.34580daa1872630bde.jpg" border="0">
-                </div>
-                
                 <!-- * Iklan -->
                 <!-- Fokus Berita -->
                 <div class="card mt-3">
-                    <div class="header-large-title">
-                        <h1 class="title">Topik Khusus</h1>
-                    </div>
-                    <div class="card-body text-left">
-                        <a href="<?= base_url()?>/tag/ferdy-sambo" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">#FERDY SAMBO</a>
-                    </div>
+                    <?php $this->load->view("component/fokus")?>
                 </div>
                 <!-- * Fokus Berita -->
             </div>
             <!-- * Colom ke 2 -->
         </div>
-        
         <br>
-        <?php $this->load->view("tampilan/component/infografis")?>
-        <div class="row" style="margin-top: -20;">
-            
+        <?php $this->load->view("tampilan/component/infografis") ?>
+        <div class="row">
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads3']?>"></script>
-                </div>
-                <div class="header-large-title">
-                    <h1 class="title">Hukum dan Kriminalitas</h1>
-                </div>
-                <div class="card mt-1">
-                    <ul class="listview image-listview media">
-                        <?php foreach ($hukum as $key => $data) {; ?>
-                            <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">HUKUM DAN KRIMINALITAS
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
+                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads3'] ?>"></script></div>
+                <!-- * Hukum dan Kriminalitas -->
+                <?php $this->load->view("component/hukumdankriminalitas")?>
                 <div class="card card-footer">
-                    <a href="<?=base_url("kanal/hukum dan kriminalitas")?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
+                    <a href="<?= base_url("kanal/hukum dan kriminalitas") ?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
                 </div>
-                <!-- * Berita Terbaru -->
+                <!-- * Hukum dan Kriminalitas -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads4']?>"></script>
-                </div>
-                <div class="header-large-title mt-5">
-                    <h1 class="title">Pendidikan</h1>
-                </div>
-                <div class="card mt-1">
-                    <ul class="listview image-listview media">
-                        <?php foreach ($pendidikan as $key => $data) {; ?>
-                            <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">PENDIDIKAN
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <?php } ?>
-                    </ul>
-                </div>
+                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads4'] ?>"></script></div>
+                <!-- * Pendidikan -->
+                <?php $this->load->view("component/pendidikan")?>
                 <div class="card card-footer">
-                    <a href="<?=base_url("kanal/pendidikan")?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
+                    <a href="<?= base_url("kanal/pendidikan") ?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
                 </div>
-                <!-- * Berita Terbaru -->
+                <!-- * Pendidikan -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title']?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?=$daerah['ads5']?>"></script>
-                </div>
+                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads5'] ?>"></script></div>
                 <!-- Olahraga -->
-                <div class="header-large-title mt-5">
-                    <h1 class="title">Olahraga</h1>
-                </div>
-                <div class="card mt-1">
-                    <ul class="listview image-listview media">
-                        <?php foreach ($olahraga as $key => $data) {; ?>
-                            <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">OLAHRAGA
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <?php } ?>
-                    </ul>
-                </div>
+                <?php $this->load->view("component/olahraga")?>
                 <div class="card card-footer">
-                    <a href="<?=base_url("kanal/olahraga")?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
+                    <a href="<?= base_url("kanal/olahraga") ?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
                 </div>
                 <!-- * Olahraga -->
             </div>
@@ -360,30 +240,30 @@
                     <ul class="listview image-listview media">
                         <?php foreach ($pemerintahan as $key => $data) {; ?>
                             <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">PEMERINTAHAN
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                            </div>
+                                <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+                                    <div class="item">
+                                        <div class="imageWrapper">
+                                            <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                        </div>
+                                        <div class="in">
+                                            <div>
+                                                <header class="text-primary fn80 text-uppercase font-weight-bold">PEMERINTAHAN
+                                                </header>
+                                                <h3><?= $data['news_title'] ?></h3>
+                                                <div class="text-muted d-block fn60">
+                                                    <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                                                </div>
 
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </li>
-                        </a>
+                            </a>
                         <?php } ?>
                     </ul>
                 </div>
                 <div class="card card-footer">
-                    <a href="<?=base_url("kanal/pemerintahan")?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
+                    <a href="<?= base_url("kanal/pemerintahan") ?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
                 </div>
                 <!-- * Pemerintahan -->
             </div>
@@ -396,33 +276,33 @@
                     <ul class="listview image-listview media">
                         <?php foreach ($gaya as $key => $data) {; ?>
                             <li>
-                                <a href="<?=base_url()?>baca/<?=$data['news_id']?>/<?=$this->fungsi->timeToStr("Ymd",$data['news_datepub'])?>/<?=$this->fungsi->timeToStr("his",$data['news_datepub'])?>/<?= $this->fungsi->convertToSlug($data['news_title'])?>">
-                                <div class="item">
-                                    <div class="imageWrapper">
-                                        <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
-                                    </div>
-                                    <div class="in">
-                                        <div>
-                                            <header class="text-primary fn80 text-uppercase font-weight-bold">GAYA HIDUP
-                                            </header>
-                                            <h3><?= $data['news_title'] ?></h3>
-                                            <div class="text-muted d-block fn60">
-                                                <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
-                                            </div>
+                                <a href="<?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?>">
+                                    <div class="item">
+                                        <div class="imageWrapper">
+                                            <img src="<?= $this->fungsi->imageThumbnail($data['news_image_new'], "th") ?>" alt="image" class="imaged w100">
+                                        </div>
+                                        <div class="in">
+                                            <div>
+                                                <header class="text-primary fn80 text-uppercase font-weight-bold">GAYA HIDUP
+                                                </header>
+                                                <h3><?= $data['news_title'] ?></h3>
+                                                <div class="text-muted d-block fn60">
+                                                    <ion-icon name="time-outline"></ion-icon><?= $this->fungsi->timeAgo($data['news_datepub']) ?></span>
+                                                </div>
 
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </li>
-                        </a>
+                            </a>
                         <?php } ?>
                     </ul>
                 </div>
                 <div class="card card-footer">
-                    <a href="<?=base_url("kanal/gaya hidup")?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
+                    <a href="<?= base_url("kanal/gaya hidup") ?>" class="btn btn-outline-primary mr-1 mb-1 font-weight-bold text-uppercase">SELENGKAPNYA</a>
                 </div>
                 <!-- * Gaya -->
-                
+
             </div>
         </div>
         <!-- *Row ke 3 -->

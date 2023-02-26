@@ -55,7 +55,8 @@ $route['kanal/(:any)'] = 'news/kanal/';
 $route['tag/(:any)'] = 'news/tag/';
 $route['search'] = 'news/search/';
 $route['baca/(:any)/(:any)/(:any)/(:any)'] = 'news/detail/';
+$route['404'] = 'err';
 $route['(:any)'] = 'page/static/';
 
-$route['404_override'] = 'err';
+$route['404_override'] = '404';
 $route['translate_uri_dashes'] = FALSE;

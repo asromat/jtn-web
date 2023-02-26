@@ -11,8 +11,8 @@
                         <?php foreach ($infografis as $key => $data) {; ?>
                         <div class="owl-item" style="width: 328.533px; margin-right: 16px;">
                             <div class="item">
-                                <a href="<?= $data['url']?>">
-                                <img src="<?= $data['infografis_url']?>" alt="<?= $data['news_caption']?>" class="imaged w-100">
+                                <a href=<?= str_replace("malangtimes.com","jatimtimes.com",$data['url'])?>">
+                                <img src="<?= $this->fungsi->imageThumbnail($data['infografis_url'],"md") ?>" alt="<?= $data['news_caption']?>" class="imaged w-100">
                                 </a>
                             </div>
                         </div>

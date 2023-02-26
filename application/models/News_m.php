@@ -9,16 +9,14 @@ class News_m extends CI_Model
 
     public function __construct()
     {
-        // Environment
-        // $this->_client = new Client([
-        //     'base_uri' => 'http://fix-jtnapi.test/',
-        //     'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
-        // ]);
+        // Data Konfigurasi API
+        $data = include(FCPATH . 'tenants/config/apikey.php');
+
         // Real
         if ($this->uri->segment("1") == "baca" and $this->uri->segment("2") < 100000) {
             $this->_client = new Client([
             'base_uri' => 'https://mlgapi.jtnweb.my.id',
-            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+            'auth' => [$data['username'], $data['password']]
             ]);
         } else {
             $this->_client = new Client([
@@ -26,7 +24,7 @@ class News_m extends CI_Model
             // 'base_uri' => 'http://fix-jtnapi.me',
             // 'base_uri' => 'http://jtn.dnssec.icu',
             'base_uri' => 'http://api.fitrah.sch.id/jtn/',
-            'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
+            'auth' => [$data['username'], $data['password']]
             ]);
         }
     }
@@ -36,6 +34,19 @@ class News_m extends CI_Model
         $res = $this->_client->request('GET', 'news/location', [
             'query' => [
                 'location' => $location,
+                'start' => $start,
+                'limit' => $limit,
+            ]
+        ]);
+
+        $response = json_decode($res->getBody()->getContents(), true);
+        return $response;
+    }
+
+    public function getFokus($limit = null,$start = null)
+    {
+        $res = $this->_client->request('GET', 'news/fokus', [
+            'query' => [
                 'start' => $start,
                 'limit' => $limit,
             ]
