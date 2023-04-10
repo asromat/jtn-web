@@ -123,7 +123,7 @@
                     <div class="row">
                         <div class="col-12">
                             <!-- <h3>Komentar</h3> -->
-                            <div class="fb-comments" data-href="<?= current_url() ?>" data-width="100%" data-numposts="20"></div>
+                            <div class="fb-comments" data-href="<?= current_url() ?>" data-width="100%" data-numposts="20" data-lazy="true"></div>
                         </div>
                     </div>
                     <hr>
