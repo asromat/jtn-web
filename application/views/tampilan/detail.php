@@ -121,6 +121,13 @@
                     </p>
                     <hr>
                     <div class="row">
+                        <div class="col-12">
+                            <!-- <h3>Komentar</h3> -->
+                            <div class="fb-comments" data-href="<?= current_url() ?>" data-width="100%" data-numposts="20"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
                         <!-- <div class="col-2">
                             <img loading="lazy" src="https://lh3.googleusercontent.com/_x0eP5LbSX9BWgkmwRHSJXe8lgn7FyrfyM5P0kNJyiTqcJFHn-WJzCo8P_bs5VnwZw=w300" class="mr-3" alt="Jatim Times Network" width="100px">
                         </div> -->

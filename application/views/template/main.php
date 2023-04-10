@@ -151,6 +151,8 @@
     <meta name="theme-color" content="#113491">
     <link rel="manifest" href="<?=base_url()?>/manifest.json">
     <!-- !End PWA Script -->
+    <!-- FB Moderation -->
+    <meta property="fb:app_id" content="&#123;582470740510509&#125;" />
 </head>
 
 <body>
@@ -508,6 +510,10 @@
       });
     </script>
     <!-- Install -->
+
+    <!-- FB Comment -->
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v16.0&appId=582470740510509&autoLogAppEvents=1" nonce="LhWvjlAn"></script>
 </body>
 
 </html>
