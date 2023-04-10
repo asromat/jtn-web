@@ -143,7 +143,7 @@
             <div class="col-12 col-lg-4 mt-2">
                 <!-- Berita Populer -->
                 <div class="card">
-                    <?php $this->load->view("tampilan/component/iklangeser") ?><br><br>
+                    <?php $this->load->view("tampilan/component/iklansliderrev") ?><br><br>
                     <div class="header-large-title">
                         <h1 class="title">Headline Berita</h1>
                         <h4 class="subtitle">Wajib Kamu Baca</h4>
