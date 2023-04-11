@@ -328,16 +328,16 @@
                 <br>
                 <!-- sidebar buttons -->
                 <div class="sidebar-buttons">
-                    <a href="#" class="button">
+                    <a href="https://www.facebook.com/jatimtimesnetwork/" target="_blank" class="button">
                         <ion-icon name="logo-facebook" style="color: #0165e1"></ion-icon>
                     </a>
-                    <a href="#" class="button">
+                    <a href="https://youtube.com/c/JatimTIMESNetworkOfficialVideos" target="_blank" class="button">
                         <ion-icon name="logo-youtube" style="color: #ff0000"></ion-icon>
                     </a>
-                    <a href="https://instagram.com/jatimtimescom" class="button">
+                    <a href="https://instagram.com/jatimtimescom" target="_blank" class="button">
                         <ion-icon name="logo-instagram" style="color: #ff0073"></ion-icon>
                     </a>
-                    <a href="#" class="button">
+                    <a href="https://www.tiktok.com/@jatimtimes" target="_blank" class="button">
                         <ion-icon name="logo-tiktok" style="color: #000040"></ion-icon>
                     </a>
                 </div>
@@ -380,17 +380,17 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" target="_blank" class="text-light">
+                                <a href="https://www.facebook.com/jatimtimesnetwork/" target="_blank" class="text-light">
                                     <ion-icon name="logo-facebook"></ion-icon> jatimtimes.com
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" target="_blank" class="text-light">
-                                    <ion-icon name="logo-twitter"></ion-icon> @jatimtimes
+                                <a href="https://www.tiktok.com/@jatimtimes" target="_blank" class="text-light">
+                                    <ion-icon name="logo-tiktok"></ion-icon> @jatimtimes
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" comet="_blank" class="text-light">
+                                <a href="https://youtube.com/c/JatimTIMESNetworkOfficialVideos" comet="_blank" class="text-light">
                                     <ion-icon name="logo-youtube"></ion-icon> @jatimtimes
                                 </a>
                             </li>
