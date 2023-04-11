@@ -6,11 +6,11 @@
    <loc><?= base_url() ?>baca/<?= $data['news_id'] ?>/<?= $this->fungsi->timeToStr("Ymd", $data['news_datepub']) ?>/<?= $this->fungsi->timeToStr("his", $data['news_datepub']) ?>/<?= $this->fungsi->convertToSlug($data['news_title']) ?></loc>
    <news:news>
    <news:publication>
-     <news:name><![CDATA[ <?= $daerah['site_title']?> ]]></news:name>
+     <news:name><![CDATA[ <?= xml_convert($daerah['site_title'])?> ]]></news:name>
      <news:language>id</news:language>
    </news:publication>
    <news:publication_date><?= $this->fungsi->timeToStr("Y-m-d", $data['news_datepub']) ?></news:publication_date>
-     <news:title><?= $data['news_title'] ?></news:title>
+     <news:title><?= xml_convert($data['news_title']) ?></news:title>
     </news:news>
   </url>
     <?php } ?>

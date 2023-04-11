@@ -11,12 +11,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
             <news:news>
                 <news:publication>
                     <news:name>
-                        <![CDATA[ <?= $daerah['site_title'] ?> ]]>
+                        <![CDATA[ <?= xml_convert($daerah['site_title']) ?> ]]>
                     </news:name>
                     <news:language>id</news:language>
                 </news:publication>
                 <news:publication_date><?= $this->fungsi->timeToStr("Y-m-d", $data['news_datepub']) ?></news:publication_date>
-                <news:title><?= $data['news_title'] ?></news:title>
+                <news:title><?= xml_convert($data['news_title']) ?></news:title>
             </news:news>
             <changefreq>always</changefreq>
             <priority>0.7</priority>

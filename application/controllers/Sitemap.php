@@ -10,6 +10,7 @@ class Sitemap extends CI_Controller
 		parent::__construct();
 		$this->load->model("news_m");
 		$this->data['daerah'] = $this->settings->dataDaerah($_SERVER['HTTP_HOST'])[0];
+		$this->load->helper('xml');
 	}
 
 	// Beranda
