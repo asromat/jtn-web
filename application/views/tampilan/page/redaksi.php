@@ -104,9 +104,9 @@
 
 							<p><strong>NGAWI</strong></p>
 
-							<p>Manajer Area:</p>
+							<p>Manajer Area: Heri Sumaryanto</p>
 
-							<p>Jurnalis :</p>
+							<p>Jurnalis : Satria Romadhoni</p>
 
 							<p>Marketing :</p>
 
@@ -178,6 +178,8 @@
 
 							<p><strong>IT Programmer &amp; Design</strong></p>
 
+							<p>Berry</p>
+							
 							<p>Fitrah Izul Falaq</p>
 
 							<p><strong>Publishing &amp; Social Media</strong></p>
@@ -213,7 +215,7 @@
 								Nurlayla Ratri</p>
 
 							<p><strong>IT Manager</strong><br />
-								Aditya Fachril</p>
+								Berry</p>
 
 							<p><strong>Social Media Manager</strong><br />
 								Sri Kurnia Mahiruni</p>
