@@ -1,4 +1,4 @@
-<div class="header-large-title mt-5">
+<div class="header-large-title">
     <h1 class="title">Pendidikan</h1>
 </div>
 <div class="card mt-1">

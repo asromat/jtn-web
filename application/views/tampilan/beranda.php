@@ -112,13 +112,6 @@
                         </div>
                     <?php } ?>
                 </div>
-                <!-- * Slider Headline -->
-                <div style="text-align:center;">
-                    <div class="adbox adbox-responsive mt-4" style="max-width:336px;">
-                        <!-- Iklan <?= $daerah['site_title'] ?> -->
-                        <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads1'] ?>"></script>
-                    </div>
-                </div>
                 <!-- Berita Terbaru -->
                 <div class="header-large-title mt-5">
                     <h1 class="title">Berita Terbaru</h1>
@@ -171,12 +164,6 @@
                     </div>
                 </div>
                 <!-- * Berita Populer -->
-                <!-- Iklan -->
-                <div class="adbox adbox-responsive mt-4">
-                    <!-- Iklan <?= $daerah['site_title'] ?> -->
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads2'] ?>"></script>
-                </div>
-                <!-- * Iklan -->
                 <!-- Fokus Berita -->
                 <div class="card mt-3">
                     <?php $this->load->view("component/fokus")?>
@@ -189,7 +176,6 @@
         <?php $this->load->view("tampilan/component/infografis") ?>
         <div class="row">
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads3'] ?>"></script></div>
                 <!-- * Hukum dan Kriminalitas -->
                 <?php $this->load->view("component/hukumdankriminalitas")?>
                 <div class="card card-footer">
@@ -198,7 +184,6 @@
                 <!-- * Hukum dan Kriminalitas -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads4'] ?>"></script></div>
                 <!-- * Pendidikan -->
                 <?php $this->load->view("component/pendidikan")?>
                 <div class="card card-footer">
@@ -207,7 +192,6 @@
                 <!-- * Pendidikan -->
             </div>
             <div class="col-12 col-lg-4">
-                <div class="adbox adbox-responsive mt-4"><script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads5'] ?>"></script></div>
                 <!-- Olahraga -->
                 <?php $this->load->view("component/olahraga")?>
                 <div class="card card-footer">

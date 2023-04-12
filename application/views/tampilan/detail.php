@@ -181,11 +181,6 @@
                     <?php $this->load->view("component/headlineText") ?>
                 </div>
                 <!-- * Berita Populer -->
-                <!-- Iklan -->
-                <!--<div class="adbox adbox-responsive mt-4">-->
-                <!--    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads6'] ?>"></script>-->
-                <!--</div>-->
-                <!-- * Iklan -->
             </div>
             <!-- ! Sisi Kiri -->
         </div>

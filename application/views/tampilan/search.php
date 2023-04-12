@@ -53,15 +53,7 @@
                         <?php $this->load->view("component/fokus")?>
                     </div>
                 </div>
-                <!-- * FOkus -->
-                <!-- Iklan -->
-                <div class="adbox adbox-responsive mt-4">
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads1'] ?>"></script>
-                </div>
-                <div class="adbox adbox-responsive mt-4">
-                    <script src="https://pasangiklan.jatimtimes.com/amb/ser.php?f=<?= $daerah['ads2'] ?>"></script>
-                </div>
-                <!-- ! Iklan -->
+                <!-- * FOkus -->                
             </div>
         </div>
     </div>
