@@ -32,8 +32,6 @@
 							<p>Nurlayla Ratri</p>
 							<h3>Wakil Pemimpin Redaksi</h3>
 							<p>Dede Nana</p>
-							<h3>Penasehat Hukum</h3>
-							<p>Wiwit Tuhu Prasetyanto, S.H., M.H<br />Awim Dharmawan SH. MH</p>
 							<h3>Redaktur</h3>
 							<p>Nurlayla Ratri, Heryanto, A.Yahya, Yunan Helmy, Sri Kurnia Mahiruni, Dede Nana, Pipit Anggraeni</p>
 							<h3>DAERAH BANYUWANGI</h3>
@@ -115,6 +113,8 @@
 							<p>Berry Arfiandika</p>
 							<h3>Social Media Manager</h3>
 							<p>Sri Kurnia Mahiruni</p>
+							<h3>Penasehat Hukum</h3>
+							<p>Wiwit Tuhu Prasetyanto, S.H., M.H<br />Awim Dharmawan SH. MH</p>
 							<h2>Head Office:</h2>
 							<p>Tlogomas Square Kav. 14, Kota Malang, Provinsi Jawa Timur.<br />Telp/Fax (0341) 5074 961</p>
 							<h2>Branch Office:</h2>
