@@ -20,297 +20,284 @@
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<div class="header-large-title bg-times-gradient">
+				<div class="header-large-title">
 					<h1 class="title p-1">Redaksi</h1>
 				</div>
 				<div class="card-body">
 					<div class="row">
 						<div class="col-12 col-lg-8">
-							<h1><strong>REDAKSI </strong><strong>JATIMTIMES.COM</strong></h1>
-
+							<h1>REDAKSI JATIMTIMES.COM</h1>
 							<h2>Dewan Redaksi</h2>
-
-							<p><strong>Pemimpin Redaksi/Penanggungjawab</strong></p>
-
-							<p>Heryanto</p>
-
-							<p><strong>Wakil Pemimpin Redaksi</strong></p>
-
+							<h3>Pemimpin Redaksi/Penanggungjawab</h3>
+							<p>Nurlayla Ratri</p>
+							<h3>Wakil Pemimpin Redaksi</h3>
 							<p>Dede Nana</p>
-
-							<p><strong>Penasehat Hukum</strong></p>
-
-							<p>Wiwit Tuhu Prasetyanto, S.H., M.H</p>
-
-							<p>Awim Dharmawan SH. MH</p>
-
-							<p><strong>Redaktur</strong></p>
-
-							<p>Heryanto, A.Yahya, Yunan Helmy, Sri Kurnia Mahiruni, Moch R Abdul Fatah,Nurlayla Ratri, Dede Nana, Pipit Anggraeni</p>
-
-							<p><strong>&nbsp;</strong></p>
-
-							<h2><strong>DAERAH</strong></h2>
-
-							<p><strong>BANYUWANGI&nbsp;</strong>:</p>
-
+							<h3>Penasehat Hukum</h3>
+							<p>Wiwit Tuhu Prasetyanto, S.H., M.H<br />Awim Dharmawan SH. MH</p>
+							<h3>Redaktur</h3>
+							<p>Nurlayla Ratri, Heryanto, A.Yahya, Yunan Helmy, Sri Kurnia Mahiruni, Dede Nana, Pipit Anggraeni</p>
+							<h3>DAERAH BANYUWANGI</h3>
 							<p>Manajer Area: Nurhadi Joyo, Suwandi</p>
-
-							<p><strong>BLITAR&nbsp;</strong>:</p>
-
+							<h3>BLITAR</h3>
 							<p>Manajer Area: Aunur Rofiq</p>
-
-							<p><strong>BONDOWOSO</strong></p>
-
+							<h3>BONDOWOSO</h3>
 							<p>Manajer Area: Abror Rosi</p>
-
-							<p><strong>GRESIK</strong></p>
-
+							<h3>GRESIK</h3>
 							<p>Manajer Area: Syaifuddin Anam</p>
-
-							<p><strong>JEMBER</strong></p>
-
+							<h3>JEMBER</h3>
 							<p>Manajer Area: Moh Ali Makrus</p>
-
 							<p>Jurnalis : Hirna Ramadanianto</p>
-
-							<p><strong>JOMBANG</strong></p>
-
+							<h3>JOMBANG</h3>
 							<p>Manajer Area: Adi Rosul</p>
-
-							<p>Jurnalis : Lutfi Utomo, Adang Dwi Widagdo</p>
-
-							<p><strong>KEDIRI</strong></p>
-
+							<h3>KEDIRI</h3>
 							<p>Manajer Area: Bambang Setioko</p>
-
 							<p>Jurnalis : Eko Arif S</p>
-
-							<p><strong>LUMAJANG</strong></p>
-
-							<p>Manajer Area: </p>
-
-							<p><strong>MALANG</strong></p>
-
-							<p>Jurnalis : Lazuardi Firdaus,Pipit Anggraeni,Anggara Sudiongko,Hendra Adi Saputra, Imarotul Izzah, Tubagus Ody, Desi Kris, Irsya Richa</p>
-
-							<p>Koordinator Kota Malang : Nurlayla Ratri</p>
-
-							<p>Koordinator Kabupaten Malang dan Kota Batu : Dede Nana</p>
-
-							<p><strong>MADIUN</strong></p>
-
-							<p>Manajer Area: Muhamad Nasir</p>
-
-							<p><strong>NGAWI</strong></p>
-
-							<p>Manajer Area: Heri Sumaryanto</p>
-
-							<p>Jurnalis : Satria Romadhoni</p>
-
-							<p>Marketing :</p>
-
-							<p><strong>SURABAYA</strong></p>
-
-							<p>Manajer Area:Muhammad Bahrul Marzuki</p>
-
-							<p><strong>LAMONGAN</strong></p>
-
-							<p>Manajer Area:M. Nur Ali Zulfikar</p>
-
-							<p><strong>TRENGGALEK</strong></p>
-
+							<h3>LUMAJANG</h3>
 							<p>Manajer Area:</p>
-
-							<p><strong>TULUNGAGUNG</strong></p>
-
-							<p>Manajer Area:Anang Basori</p>
-
-							<p>Jurnalis :Muhamad Muhsin Sururi</p>
-
-							<p><strong>TUBAN</strong></p>
-
-							<p>Manajer Area:Salamun</p>
-
-							<p>Jurnalis :Ahmad Istihar</p>
-
-							<p><strong>SampangTIMES</strong></p>
-
-							<p>Manajer Area:Abd Syukur</p>
-
-							<p><strong>MagetanTIMES</strong></p>
-
-							<p>Manajer Area: Heri Widodo</p>
-							
-							<p>Wartawan:Chrissie,Danang Kurniawan</p>
-
-							<p>Marketing:Edi Hartoyo</p>
-
-							<p>Medsos dan Administrasi:Saniatun Khasani</p>
-							
-							<p><strong>MojokertoTIMES</strong></p>
-
+							<h3>MALANG</h3>
+							<p>Jurnalis : Anggara Sudiongko, Hendra Adi Saputra, Rizky Wijaya, Tubagus Ody, Binti Nikmatur, Ashaq Lupito, Irsya Richa, Mutmainah</p>
+							<h3>MADIUN</h3>
+							<p>Manajer Area: Muhamad Nasir</p>
+							<h3>NGAWI</h3>
+							<p>Manajer Area: Heri Sumaryanto</p>
+							<p>Jurnalis : Satria Romadhoni</p>
+							<h3>SURABAYA</h3>
+							<p>Manajer Area:Muhammad Bahrul Marzuki</p>
+							<h3>LAMONGAN</h3>
+							<p>Manajer Area: M. Nur Ali Zulfikar</p>
+							<h3>TRENGGALEK</h3>
+							<p>Manajer Area:</p>
+							<h3>TULUNGAGUNG</h3>
+							<p>Manajer Area: Anang Basori</p>
+							<p>Jurnalis : Muhamad Muhsin Sururi</p>
+							<h3>TUBAN</h3>
+							<p>Manajer Area: Salamun</p>
+							<p>Jurnalis : Ahmad Istihar</p>
+							<h3>SampangTIMES</h3>
+							<p>Manajer Area: Abd Syukur</p>
+							<h3>MagetanTIMES</h3>
+							<p>Manajer Area:</p>
+							<p>Wartawan :</p>
+							<h3>MojokertoTIMES</h3>
 							<p>Manajer Area: Abdullah musawa</p>
-
-							<p><strong>PamekasanTIMES</strong></p>
-
-							<p>Manajer Area:Moh Khairul Rozi</p>
-
-							<p>Medsos :Haswatun Hasanah</p>
-
-							<p><strong>BangkalanTIMES</strong></p>
-
-							<p>Manajer Area:Abdul Hakim</p>
-
-							<p>Jurnalis :Imam Faikli, Supriyadi</p>
-
-							<p><strong>SumenepTIMES</strong></p>
-
-							<p>Manajer Area:Syaiful Ramadhani</p>
-
-							<p><strong>SidoarjoTIMES</strong></p>
-
-							<p>Manajer Area:&nbsp;Irwan Febrianto Nugroho</p>
-
-							<p><strong>&nbsp;</strong></p>
-
-							<h2><strong>DEPARTMENT</strong></h2>
-
-							<p><strong>IT Programmer &amp; Design</strong></p>
-
+							<h3>PamekasanTIMES</h3>
+							<p>Manajer Area: Moh Khairul Rozi</p>
+							<p>Medsos : Haswatun Hasanah</p>
+							<h3>BangkalanTIMES</h3>
+							<p>Manajer Area: Imam Faikli</p>
+							<h3>SumenepTIMES</h3>
+							<p>Manajer Area:</p>
+							<h3>SidoarjoTIMES</h3>
+							<p>Manajer Area: Irwan Febrianto Nugroho</p>
+							<h2>DEPARTMENT</h2>
+							<h3>IT Programmer &amp; Design</h3>
+							<p>Berry Arfiandika</p>
 							<p>Fitrah Izul Falaq</p>
-
-							<p><strong>Publishing &amp; Social Media</strong></p>
-
-							<p>Raafi Prapandha, Budi, Yogi Iqbal, Ahmad Nur Amin, Andi Wira</p>
-
-							<p><strong>Administration &amp; General</strong></p>
-
+							<h3>Publishing &amp; Social Media</h3>
+							<p>Manajer : Sri Kurnia Mahiruni</p>
+							<p>Anggota : Yogi Iqbal, Ahmad Nur Amin, Andi Wira</p>
+							<h3>Administration &amp; General</h3>
 							<p>Irmawati, Thya Fitria, Hezza Sukmasita, Arizal Dian Suprayogi</p>
-
-							<p><strong>Advertising and Marketing</strong></p>
-
-							<p>Muslimin, Hezza Sukmasita, Mukhlasyin, Bery Arfiandika</p>
-
-							<p><strong>JATIM TIMES NETWORK</strong></p>
-
-							<p><strong>Direktur Utama</strong><br />
-								Gufron Marzuqi</p>
-
-							<p><strong>Dir</strong><strong>e</strong><strong>ktur</strong><br />
-								Lazuardi Firdaus</p>
-
-							<p><strong>General Manager</strong><br />
-								Heryanto</p>
-
-							<p><strong>Manager Keuangan</strong><br />
-								Ida Hdy</p>
-
-							<p><strong>Manager HRD</strong><br />
-								A Yahya</p>
-
-							<p><strong>Manager Marketing</strong><br />
-								Nurlayla Ratri</p>
-
-							<p><strong>IT Manager</strong><br />
-								Aditya Fachril</p>
-
-							<p><strong>Social Media Manager</strong><br />
-								Sri Kurnia Mahiruni</p>
-
-
-							<h2><strong>Head Office:</strong></h2>
-
-							<p>Tlogomas Square Kav. 14, Kota Malang, Provinsi Jawa Timur.</p>
-
-							<p>Telp/Fax (0341) 5074 961</p>
-
-							<h2><strong>Branch Office:</strong></h2>
-
-							<p><strong>MadiunTIMES</strong></p>
-
-							<p>Jl.Sriagung No.50 Kelun Kota Madiun</p>
-
-							<p>Telp 0822-4447-3889</p>
-
-							<p>&nbsp;</p>
-
-							<h1><strong>Jejaring PT Jatim TIMES Network (JATIMTIMES.COM) :</strong></h1>
-
-							<table style="width:490px">
-								<tbody>
-									<tr>
-										<td><a href="https://bangkalantimes.com/">bangkalantimes.com</a></td>
-										<td><a href="https://banyuwangitimes.com/">banyuwangitimes.com</a></td>
-										<td><a href="https://batutimes.com/">batutimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://blitartimes.com/">blitartimes.com</a></td>
-										<td><a href="https://bojonegorotimes.com/">bojonegorotimes.com</a></td>
-										<td><a href="https://bondowosotimes.com/">bondowosotimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://gresiktimes.com/">gresiktimes.com</a></td>
-										<td><a href="https://jembertimes.com/">jembertimes.com</a></td>
-										<td><a href="https://jombangtimes.com/">jombangtimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://kediritimes.com/">kediritimes.com</a></td>
-										<td><a href="https://lamongantimes.com/">lamongantimes.com</a></td>
-										<td><a href="https://lumajangtimes.com/">lumajangtimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://lumajangtimes.com/">madiuntimes.com</a></td>
-										<td><a href="https://maduratimes.com/">maduratimes.com</a></td>
-										<td><a href="https://mojokertotimes.com/">mojokertotimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://nganjuktimes.com/">nganjuktimes.com</a></td>
-										<td><a href="https://ngawitimes.com/">ngawitimes.com</a></td>
-										<td><a href="https://pacitantimes.com/">pacitantimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://pamekasantimes.com/">pamekasantimes.com</a></td>
-										<td><a href="https://pasuruantimes.com/">pasuruantimes.com</a></td>
-										<td><a href="https://ponorogotimes.com/">ponorogotimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://probolinggotimes.com/">probolinggotimes.com</a></td>
-										<td><a href="https://sampangtimes.com/">sampangtimes.com</a></td>
-										<td><a href="https://sidoarjotimes.com/">sidoarjotimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://situbondotimes.com/">situbondotimes.com</a></td>
-										<td><a href="https://sumeneptimes.com/">sumeneptimes.com</a></td>
-										<td><a href="https://surabayatimes.com/">surabayatimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://trenggalektimes.com/">trenggalektimes.com</a></td>
-										<td><a href="https://tubantimes.com/">tubantimes.com</a></td>
-										<td><a href="https://tulungagungtimes.com/">tulungagungtimes.com</a></td>
-									</tr>
-									<tr>
-										<td><a href="https://indonesiatimes.co/">indonesiatimes.co</a></td>
-										<td><a href="https://malangtimes.com/">malangtimes.com</a></td>
-										<td>&nbsp;</td>
-									</tr>
-								</tbody>
-							</table>
-
-							<p>&nbsp;</p>
-
-							<h2><strong>Publishing PT Jatim Times Network&nbsp;</strong><br />
-								<strong>SK Kemenkum HAM</strong>: AHU-0002488.AH.01.01.Tahun 2016<br />
-								<strong>SIUP :&nbsp;<a href="https://tel:517/0241/35.73.407">517/0241/35.73.407</a>/2016</strong><br />
-								<strong>TDP &nbsp;: 130.81.61.00031<br />
-									NPWP : 75.738.024.1-652.000</strong>
-							</h2>
-
+							<h3>Advertising and Marketing</h3>
+							<p>Muslimin, Hezza Sukmasita, Mukhlasyin</p>
+							<h2>JATIM TIMES NETWORK</h2>
+							<h3>Direktur Utama</h3>
+							<p>Lazuardi Firdaus</p>
+							<h3>Direktur</h3>
+							<p>Heryanto</p>
+							<h3>Manager Keuangan</h3>
+							<p>Ida Hidayati</p>
+							<h3>Manager HRD</h3>
+							<p>A Yahya</p>
+							<h3>Manager Marketing</h3>
+							<p>Muslimin</p>
+							<h3>IT Manager</h3>
+							<p>Berry Arfiandika</p>
+							<h3>Social Media Manager</h3>
+							<p>Sri Kurnia Mahiruni</p>
+							<h2>Head Office:</h2>
+							<p>Tlogomas Square Kav. 14, Kota Malang, Provinsi Jawa Timur.<br />Telp/Fax (0341) 5074 961</p>
+							<h2>Branch Office:</h2>
+							<p>MadiunTIMES<br />Jl.Sriagung No.50 Kelun Kota Madiun<br />Telp 0822-4447-3889</p>
+							<h1>Publishing PT Jatim Times Network</h1>
+							<h2>SK Kemenkum HAM: AHU-0014500.AH.01.02.Tahun 2023</h2>
+							<p>
+								SIUP : 517/0241/35.73.407/2016 <br>
+								TDP&nbsp; : 130.81.61.00031 <br>
+								NPWP : 75.738.024.1-652.000
+							</p>
 						</div>
-
 						<!-- <div class="col-12 col-lg-4">
 							<?php $this->view("element/navigasi-pages") ?>
 						</div> -->
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-12">
+							<center>
+								<h1>Jatim Times Network</h1>
+							</center>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://bangkalan.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/bangkalan.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://banyuwangi.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/banyuwangi.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://batu.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/batu.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://blitar.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/blitar.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://bojonegoro.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/bojonegoro.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://bondowoso.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/bondowoso.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://gresik.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/gresik.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://jember.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/jember.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://jombang.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/jombang.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://kediri.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/kediri.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://lamongan.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/lamongan.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://lumajang.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/lumajang.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://madiun.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/madiun.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://madura.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/madura.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://malangtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/malang.webp" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://mojokerto.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/mojokerto.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://nganjuk.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/nganjuk.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://ngawi.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/ngawi.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://pacitan.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/pacitan.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://pamekasan.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/pamekasan.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://pasuruan.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/pasuruan.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://ponorogo.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/ponorogo.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://probolinggo.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/probolinggo.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://sampang.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/sampang.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://sidoarjo.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/sidoarjo.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://situbondo.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/situbondo.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://sumenep.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/sumenep.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://surabaya.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/surabaya.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://trenggalek.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/trenggalek.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://tuban.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/tuban.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://tulungagung.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/tulungagung.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
+						<div class="col-6 col-md-6 col-sm-6 col-lg-3 p-4">
+							<a href="https://indonesia.jatimtimes.com" target="blank">
+								<img class="imaged w-100" src="https://i0.wp.com/cdnstatic.jatimtimes.com/logo/new/INDONESIA.png" alt="JatimTimes Media Terverifikasi Dewan Pers" loading="lazy" fetchpriority="high">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
