@@ -178,8 +178,6 @@
 
 							<p><strong>IT Programmer &amp; Design</strong></p>
 
-							<p>Berry</p>
-							
 							<p>Fitrah Izul Falaq</p>
 
 							<p><strong>Publishing &amp; Social Media</strong></p>
@@ -215,7 +213,7 @@
 								Nurlayla Ratri</p>
 
 							<p><strong>IT Manager</strong><br />
-								Berry</p>
+								Aditya Fachril</p>
 
 							<p><strong>Social Media Manager</strong><br />
 								Sri Kurnia Mahiruni</p>
@@ -269,7 +267,7 @@
 									<tr>
 										<td><a href="https://nganjuktimes.com/">nganjuktimes.com</a></td>
 										<td><a href="https://ngawitimes.com/">ngawitimes.com</a></td>
-										<td><a href="#">pacitantimes.com</a></td>
+										<td><a href="https://pacitantimes.com/">pacitantimes.com</a></td>
 									</tr>
 									<tr>
 										<td><a href="https://pamekasantimes.com/">pamekasantimes.com</a></td>
@@ -282,7 +280,7 @@
 										<td><a href="https://sidoarjotimes.com/">sidoarjotimes.com</a></td>
 									</tr>
 									<tr>
-										<td><a href="#">situbondotimes.com</a></td>
+										<td><a href="https://situbondotimes.com/">situbondotimes.com</a></td>
 										<td><a href="https://sumeneptimes.com/">sumeneptimes.com</a></td>
 										<td><a href="https://surabayatimes.com/">surabayatimes.com</a></td>
 									</tr>
