@@ -98,7 +98,7 @@
                             <b>Penulis</b> : <?= $data['news_writer'] ?> - <b>Editor :</b> <?= $editor ?>
                         </p>
                     </div>
-                    <p class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, h:i", $data['news_datepub']) ?></p>
+                    <p class="float-right text-muted"><?= $this->fungsi->timeToStr("d - M - Y, H:i", $data['news_datepub']) ?></p>
                     <div class="ss-box ss-circle" data-ss-content="false" data-ss-social="facebook, whatsapp, twitter, telegram"></div>
                 </div>
                 <div class="bg-white mt-2">
@@ -122,7 +122,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-12">
-                            <!-- <h3>Komentar</h3> -->
+                            <h3 style="font-size: 20px;">Bagaimana Komentarmu ?</h3>
                             <div class="fb-comments" data-href="<?= current_url() ?>" data-width="100%" data-numposts="20" data-lazy="true"></div>
                         </div>
                     </div>
