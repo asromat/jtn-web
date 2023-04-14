@@ -109,7 +109,7 @@ class News extends CI_Controller
 						<div>
 							<header class="text-primary fn80 text-uppercase font-weight-bold">
 							</header>
-							<small class="text-uppercase text-danger mb-1" id="kater"><i class="fas fa-tags"></i>  <strong>'.$row['news_subtitle'].'</strong></small>
+							<small class="text-uppercase text-danger mb-1" id="kater"><strong>'.$row['news_subtitle'].'</strong></small>
 							<h3>'.$row['news_title'].'</h3>
 							<div class="text-muted d-block fn60">
 								<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
@@ -142,7 +142,7 @@ class News extends CI_Controller
 						<div>
 							<header class="text-primary fn80 text-uppercase font-weight-bold">'.urldecode($this->input->post("kanal")).'
 							</header>
-							<small class="text-uppercase text-danger mb-1" id="kater"><i class="fas fa-tags"></i>  <strong>'.$row['news_subtitle'].'</strong></small>
+							<small class="text-uppercase text-danger mb-1" id="kater"><strong>'.$row['news_subtitle'].'</strong></small>
 							<h3>'.$row['news_title'].'</h3>
 							<div class="text-muted d-block fn60">
 							<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
@@ -176,7 +176,7 @@ class News extends CI_Controller
 						<div>
 							<header class="text-primary fn80 text-uppercase font-weight-bold">'.urldecode($this->input->post("kanal")).'
 							</header>
-							<small class="text-uppercase text-danger mb-1" id="kater"><i class="fas fa-tags"></i>  <strong>'.$row['news_subtitle'].'</strong></small>
+							<small class="text-uppercase text-danger mb-1" id="kater"><strong>'.$row['news_subtitle'].'</strong></small>
 							<h3>'.$row['news_title'].'</h3>
 							<div class="text-muted d-block fn60">
 							<ion-icon name="time-outline"></ion-icon>'.$this->fungsi->timeAgo($row['news_datepub']).'</span>
