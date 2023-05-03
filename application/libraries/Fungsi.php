@@ -17,8 +17,9 @@ class Fungsi
         // ]);
         // Real
         $this->_client = new Client([
-            'base_uri' => 'http://api.fitrah.sch.id/jtn/',
-            // 'base_uri' => 'http://testingapi.jtn.my.id',
+            // 'base_uri' => 'http://api.fitrah.sch.id/jtn/',
+            'base_uri' => 'http://testingapi.jtn.my.id',
+            // 'base_uri' => 'http://fix-jtnapi.me/',
             'auth' => ['webmasterjtn', 'RedaksiIndonesia-2022']
         ]);
     }
