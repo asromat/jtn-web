@@ -24,7 +24,8 @@ class News_m extends CI_Model
             // 'base_uri' => 'http://fix-jtnapi.me',
             // 'base_uri' => 'http://jtn.dnssec.icu',
             // 'base_uri' => 'http://api.fitrah.sch.id/jtn/',
-            'base_uri' => 'http://testingapi.jtn.my.id',
+            // 'base_uri' => 'http://testingapi.jtn.my.id',
+            'base_uri' => 'http://api.jtn.my.id/v1/',
             'auth' => [$data['username'], $data['password']]
             ]);
         }
